@@ -1,7 +1,7 @@
-import {
-  GET_PIZZAS_REQUEST,
-  GET_PIZZAS_SUCCESS,
-  GET_PIZZAS_FAILURE
+import { 
+  GET_INGREDIENTS_REQUEST,
+  GET_INGREDIENTS_SUCCESS,
+  GET_INGREDIENTS_FAILURE
 } from '../actions';
 
 const initialState  = {
@@ -10,20 +10,20 @@ const initialState  = {
   error: null,
 };
 
-const pizzas = (state = initialState, action) => {
+const ingredients = (state = initialState, action) => {
   switch (action.type) {
-    case GET_PIZZAS_REQUEST:
+    case GET_INGREDIENTS_REQUEST:
       return {
         ...state,
         isFetching: true,
       };
-    case GET_PIZZAS_SUCCESS:
+    case GET_INGREDIENTS_SUCCESS:
       return {
         ...state,
         isFetching: false,
         items: action.payload.items,
       };
-    case GET_PIZZAS_FAILURE:
+    case GET_INGREDIENTS_FAILURE:
       return {
         ...state,
         isFetching: false,
@@ -34,4 +34,4 @@ const pizzas = (state = initialState, action) => {
   }
 }
 
-export default pizzas;
+export default ingredients;

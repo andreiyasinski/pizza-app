@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './header.module.css';
-import Button from '../../../ui-kit/button/button.component';
-import Logo from '../../../ui-kit/logo/logo.component';
-import Basket from '../../../ui-kit/basket/basket.component';
-import Phone from '../../../ui-kit/phone/phone.component';
+import Logo from '../../ui-kit/logo/logo.component';
+import Basket from '../../ui-kit/basket/basket.component';
+import Phone from '../../ui-kit/phone/phone.component';
 
 const Header = () => {
   return (
@@ -20,7 +19,6 @@ const Header = () => {
       </nav>
       <Phone />
       <Basket />
-      <Button>ВХОД</Button>
     </div>
   );
 };

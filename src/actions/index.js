@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const GET_PIZZAS_REQUEST = 'GET_PIZZAS';
+export const GET_PIZZAS_REQUEST = 'GET_PIZZAS_REQUEST';
 export const GET_PIZZAS_SUCCESS = 'GET_PIZZAS_SUCCESS';
 export const GET_PIZZAS_FAILURE = 'GET_PIZZAS_FAILURE';
 
@@ -33,5 +33,41 @@ export const getPizzas = () => (dispatch) => {
     })
     .catch((err) => {
       dispatch(getPizzasFailure(err));
+    });
+};
+
+export const GET_INGREDIENTS_REQUEST = 'GET_INGREDIENTS_REQUEST';
+export const GET_INGREDIENTS_SUCCESS = 'GET_INGREDIENTS_SUCCESS';
+export const GET_INGREDIENTS_FAILURE = 'GET_INGREDIENTS_FAILURE';
+
+export const getIngredientsRequest = () => {
+  return {
+    type: GET_INGREDIENTS_REQUEST
+  }
+}
+
+export const getIngredientsSuccess = (items) => ({
+  type: GET_INGREDIENTS_SUCCESS,
+  payload: {
+    items,
+  },
+});
+
+export const getIngredientsFailure = (error) => ({
+  type: GET_INGREDIENTS_FAILURE,
+  payload: {
+    error,
+  },
+});
+
+export const getIngredients = () => (dispatch) => {
+  dispatch(getIngredientsRequest());
+
+  return axios('/ingredients.json')
+    .then((response) => {
+      dispatch(getIngredientsSuccess(response.data));
+    })
+    .catch((err) => {
+      dispatch(getIngredientsFailure(err));
     });
 };

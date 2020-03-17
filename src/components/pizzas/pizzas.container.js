@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPizzas } from '../../../actions';
-import Pizzas from '../component/pizzas.component';
+import { getPizzas, getIngredients } from '../../actions';
+import Pizzas from './pizzas.component';
 
 const PizzasContainer = () => {
   const pizzas = useSelector((state) => state.pizzas.items);
@@ -9,6 +9,7 @@ const PizzasContainer = () => {
 
   useEffect(() => {
     dispatch(getPizzas());
+    dispatch(getIngredients());
   }, [dispatch]);
 
 
