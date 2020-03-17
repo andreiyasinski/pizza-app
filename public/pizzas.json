@@ -1,0 +1,910 @@
+[
+  {
+    "id": 1,
+    "name": "Аррива",
+    "price": {
+      "small": "8.90",
+      "medium": "14.90",
+      "big": "19.90"
+    },
+    "image": "images/image-1.jpg",
+    "ingredients": [
+      {
+        "id": 23,
+        "removable": true
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 1,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": true
+      },
+      {
+        "id": 23,
+        "removable": false
+      },
+      {
+        "id": 28,
+        "removable": false
+      },
+      {
+        "id": 14,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Пепперони Фреш с перцем",
+    "price": {
+      "small": "6.90",
+      "medium": "11.90",
+      "big": "16.40"
+    },
+    "image": "images/image-2.jpeg",
+    "ingredients": [
+      {
+        "id": 1,
+        "removable": true
+      },
+      {
+        "id": 2,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 4,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Пепперони Фреш с томатами",
+    "price": {
+      "small": "6.90",
+      "medium": "11.90",
+      "big": "16.40"
+    },
+    "image": "images/image-3.jpeg",
+    "ingredients": [
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 2,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 4,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Ветчина и грибы",
+    "price": {
+      "small": "6.90",
+      "medium": "12.90",
+      "big": "17.90"
+    },
+    "image": "images/image-4.jpg",
+    "ingredients": [
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 6,
+        "removable": true
+      },
+      {
+        "id": 7,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ветчина и сыр",
+    "price": {
+      "small": "6.90",
+      "medium": "12.90",
+      "big": "17.90"
+    },
+    "image": "images/image-5.jpg",
+    "ingredients": [
+      {
+        "id": 8,
+        "removable": false
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 6,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Гавайская",
+    "price": {
+      "small": "8.90",
+      "medium": "14.90",
+      "big": "19.90"
+    },
+    "image": "images/image-6.jpg",
+    "ingredients": [
+      {
+        "id": 9,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 13,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Кисло-сладкий цыпленок",
+    "price": {
+      "small": "6.90",
+      "medium": "12.90",
+      "big": "17.90"
+    },
+    "image": "images/image-7.jpg",
+    "ingredients": [
+      {
+        "id": 11,
+        "removable": false
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Кисло-сладкий цыпленок",
+    "price": {
+      "small": "10.90",
+      "medium": "16.90",
+      "big": "21.90"
+    },
+    "image": "images/image-8.jpg",
+    "ingredients": [
+      {
+        "id": 14,
+        "removable": false
+      },
+      {
+        "id": 15,
+        "removable": false
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 16,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Крэйзи пепперони",
+    "price": {
+      "small": "8.90",
+      "medium": "14.90",
+      "big": "19.90"
+    },
+    "image": "images/image-9.jpg",
+    "ingredients": [
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 11,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 16,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 4,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Креветки по-азиатски",
+    "price": {
+      "small": "10.90",
+      "medium": "16.90",
+      "big": "21.90"
+    },
+    "image": "images/image-10.jpg",
+    "ingredients": [
+      {
+        "id": 20,
+        "removable": true
+      },
+      {
+        "id": 7,
+        "removable": true
+      },
+      {
+        "id": 21,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 11,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Двойная пепперони",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-11.jpg",
+    "ingredients": [
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 21,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Супермясная",
+    "price": {
+      "small": "14.90",
+      "medium": "20.90",
+      "big": "24.90"
+    },
+    "image": "images/image-12.jpg",
+    "ingredients": [
+      {
+        "id": 23,
+        "removable": true
+      },
+      {
+        "id": 24,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 18,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "От Шефа",
+    "price": {
+      "small": "14.90",
+      "medium": "20.90",
+      "big": "24.90"
+    },
+    "image": "images/image-13.jpg",
+    "ingredients": [
+      {
+        "id": 24,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 26,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 12,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 6,
+        "removable": true
+      },
+      {
+        "id": 7,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Дон Бекон",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-14.jpg",
+    "ingredients": [
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 26,
+        "removable": true
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 18,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Мясная",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-15.jpg",
+    "ingredients": [
+      {
+        "id": 23,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 6,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Цыпленок барбекю",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-16.jpg",
+    "ingredients": [
+      {
+        "id": 27,
+        "removable": false
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 18,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Сырный цыпленок",
+    "price": {
+      "small": "10.90",
+      "medium": "16.90",
+      "big": "21.90"
+    },
+    "image": "images/image-17.jpg",
+    "ingredients": [
+      {
+        "id": 34,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Цыпленок ранч",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-18.jpg",
+    "ingredients": [
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 33,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 28,
+        "removable": false
+      },
+      {
+        "id": 6,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Итальянская",
+    "price": {
+      "small": "8.90",
+      "medium": "14.90",
+      "big": "19.90"
+    },
+    "image": "images/image-19.jpg",
+    "ingredients": [
+      {
+        "id": 29,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 26,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 7,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Мексиканская",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-20.jpg",
+    "ingredients": [
+      {
+        "id": 13,
+        "removable": true
+      },
+      {
+        "id": 30,
+        "removable": false
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 10,
+        "removable": true
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 12,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Овощи и грибы",
+    "price": {
+      "small": "8.90",
+      "medium": "14.90",
+      "big": "19.90"
+    },
+    "image": "images/image-21.jpg",
+    "ingredients": [
+      {
+        "id": 29,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 31,
+        "removable": true
+      },
+      {
+        "id": 26,
+        "removable": true
+      },
+      {
+        "id": 17,
+        "removable": true
+      },
+      {
+        "id": 12,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 7,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Пепперони",
+    "price": {
+      "small": "8.90",
+      "medium": "14.90",
+      "big": "19.90"
+    },
+    "image": "images/image-22.jpg",
+    "ingredients": [
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Четыре сезона",
+    "price": {
+      "small": "10.90",
+      "medium": "16.90",
+      "big": "21.90"
+    },
+    "image": "images/image-23.jpg",
+    "ingredients": [
+      {
+        "id": 29,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 19,
+        "removable": true
+      },
+      {
+        "id": 31,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 6,
+        "removable": true
+      },
+      {
+        "id": 7,
+        "removable": true
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Четыре сыра",
+    "price": {
+      "small": "12.90",
+      "medium": "18.90",
+      "big": "22.90"
+    },
+    "image": "images/image-24.jpg",
+    "ingredients": [
+      {
+        "id": 8,
+        "removable": false
+      },
+      {
+        "id": 25,
+        "removable": true
+      },
+      {
+        "id": 22,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Маргарита",
+    "price": {
+      "small": "6.90",
+      "medium": "12.90",
+      "big": "17.90"
+    },
+    "image": "images/image-25.jpg",
+    "ingredients": [
+      {
+        "id": 29,
+        "removable": true
+      },
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Испанские колбаски чоризо",
+    "price": {
+      "small": "6.90",
+      "medium": "12.90",
+      "big": "17.90"
+    },
+    "image": "images/image-26.jpeg",
+    "ingredients": [
+      {
+        "id": 5,
+        "removable": true
+      },
+      {
+        "id": 23,
+        "removable": true
+      },
+      {
+        "id": 3,
+        "removable": false
+      },
+      {
+        "id": 32,
+        "removable": false
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Сырная",
+    "price": {
+      "small": "6.90",
+      "medium": "12.90",
+      "big": "16.90"
+    },
+    "image": "images/image-27.jpg",
+    "ingredients": [
+      {
+        "id": 4,
+        "removable": false
+      },
+      {
+        "id": 3,
+        "removable": false
+      }
+    ]
+  }
+]

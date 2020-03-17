@@ -1,0 +1,30 @@
+.phone {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #817E71;
+  text-decoration: none;
+}
+
+.phone:hover {
+  color: #1E1C22;
+}
+
+.phone:hover .phoneIcon {
+  background: #817E71;
+  color: #fff;
+}
+
+.phoneIcon {
+  width: 46px;
+  height: 46px;
+  background: #f6f5f0;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+  fill: #817E71
+}

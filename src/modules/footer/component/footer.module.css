@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 0;
+}
+
+.footerLeft {
+  width: 25%;
+}
+
+.copyright {
+  color: #1E1C22;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.link {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #817E71;
+}
+
+.link:hover {
+  text-decoration: none;
+}

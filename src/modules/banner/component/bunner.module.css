@@ -1,0 +1,7 @@
+.container {
+  margin-top: 94px;
+  height: 220px;
+  background: url("../../../assets/banner.jpg") center no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
