@@ -1,5 +1,5 @@
 .container {
-  height: 220px;
+  min-height: 220px;
   background: 
     linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
     url(../../assets/banner.jpg) center no-repeat;
@@ -8,4 +8,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    min-height: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* 769 - 960 px */
+@media screen and (max-width: 850px) {
+	
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 620px) {
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }

@@ -29,12 +29,14 @@
 }
 
 .title {
+  margin-top: 5px;
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  color: #817E71
+  color: #817E71;
+  min-height: 35px;
 }
 
 .controls {
@@ -47,4 +49,44 @@
   color: #615D49;
   font-size: 15px;
   font-weight: 700;
+}
+
+.ingredients {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 15px;
+}
+
+.ingredients::first-letter {
+  color: red;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: 33.3333%;
+  }
+}
+
+/* 769 - 960 px */
+@media screen and (max-width: 850px) {
+	.wrapper {
+    width: 50%;
+  }
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 620px) {
+  .wrapper {
+    width: 100%;
+  }
 }

@@ -5,17 +5,20 @@ import Pizzas from './pizzas.component';
 
 const PizzasContainer = () => {
   const pizzas = useSelector((state) => state.pizzas.items);
+  const ingredients = useSelector((state) => state.ingredients.items);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getPizzas());
     dispatch(getIngredients());
   }, [dispatch]);
-
-
+ 
   return (
     <>
-      <Pizzas pizzas={pizzas} />
+      <Pizzas
+        pizzas={pizzas}
+        ingredients={ingredients}
+      />
     </>
   );
 };
