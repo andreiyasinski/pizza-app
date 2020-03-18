@@ -71,3 +71,12 @@ export const getIngredients = () => (dispatch) => {
       dispatch(getIngredientsFailure(err));
     });
 };
+
+export const TOGGLE_MENU = 'TOGGLE_MENU';
+
+export const toggleMenu = (isMenuOpen) => ({
+  type: TOGGLE_MENU,
+  payload: {
+    isMenuOpen
+  },
+});

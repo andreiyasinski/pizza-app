@@ -23,3 +23,74 @@
 .link:hover {
   background-color: #F6F5F0;
 }
+
+.headerRight {
+  display: flex;
+}
+
+.phone {
+  margin-right: 20px;
+}
+
+.menuBlock {
+  display: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  margin-left: 15px;
+}
+
+.menuLine {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(43, 43, 43, 0.5);
+}
+
+.menuBlock .menu::before,
+.menuBlock .menu::after {
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(43, 43, 43, 0.5);
+}
+
+.menuBlock .menu::before,
+.menuBlock .menu::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+
+.menuBlock .menu::before {
+  transform: translateY(-10px);
+}
+
+.menuBlock .menu::after {
+  transform: translateY(8px);
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .menuBlock {
+    display: inline-block;
+  }
+
+	.menuActive .menuLine  {
+    background-color: transparent;
+  }
+  
+  .menuActive .menu::before {
+    transform: rotate(45deg);
+  }
+  
+  .menuActive .menu::after {
+    transform: rotate(-45deg);
+  }
+}

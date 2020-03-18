@@ -77,14 +77,14 @@
   }
 }
 
-/* 769 - 960 px */
+
 @media screen and (max-width: 850px) {
 	.wrapper {
     width: 50%;
   }
 }
 
-/* 481 - 768 px */
+
 @media screen and (max-width: 620px) {
   .wrapper {
     width: 100%;

@@ -1,4 +1,4 @@
-.phone {
+.container {
   display: flex;
   align-items: center;
   font-size: 30px;
@@ -8,11 +8,11 @@
   text-decoration: none;
 }
 
-.phone:hover {
+.container:hover {
   color: #1E1C22;
 }
 
-.phone:hover .phoneIcon {
+.container:hover .phoneIcon {
   background: #817E71;
   color: #fff;
 }
