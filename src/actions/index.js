@@ -80,3 +80,12 @@ export const toggleMenu = (isMenuOpen) => ({
     isMenuOpen
   },
 });
+
+export const TOGGLE_POPUP = 'TOGGLE_POPUP';
+
+export const togglePopUp = (isPopUpOpen) => ({
+  type: TOGGLE_POPUP,
+  payload: {
+    isPopUpOpen
+  },
+});

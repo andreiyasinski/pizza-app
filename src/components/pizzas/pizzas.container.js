@@ -6,6 +6,7 @@ import Pizzas from './pizzas.component';
 const PizzasContainer = () => {
   const pizzas = useSelector((state) => state.pizzas.items);
   const ingredients = useSelector((state) => state.ingredients.items);
+  const isPopUpOpen = useSelector((state) => state.popUp.isPopUpOpen);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,6 +19,7 @@ const PizzasContainer = () => {
       <Pizzas
         pizzas={pizzas}
         ingredients={ingredients}
+        isPopUpOpen={isPopUpOpen}
       />
     </>
   );
