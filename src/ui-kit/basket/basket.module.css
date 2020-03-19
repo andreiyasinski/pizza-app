@@ -16,3 +16,7 @@
 .container:hover {
   background-color: #F78500;
 }
+
+.number {
+  margin-left: 10px;
+}

@@ -6,7 +6,15 @@
   height: 90px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .link {
+  display: block;
   text-decoration: none;
   color: #1E1C22;
 }
@@ -38,7 +46,8 @@
   position: relative;
   cursor: pointer;
   width: 30px;
-  margin-left: 15px;
+  margin-left: 20px;
+  z-index: 10;
 }
 
 .menuLine {
@@ -78,6 +87,41 @@
 
 
 @media screen and (max-width: 960px) {
+  .navWrapper {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    top: 90px;
+    height: 100vh;
+    width: 0; 
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .navWrapperActive {
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* left: 0; */
+  }
+
+  .navigation {
+    background-color: #fff;
+    width: 300px;
+    transform: translateX(100%);
+    transition: all .4s ease;
+  }
+
+  .navigationActive {
+    transform: translateX(0%);
+  }
+
+  .list {
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
   .menuBlock {
     display: inline-block;
   }
