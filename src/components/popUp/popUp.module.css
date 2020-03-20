@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px;
   background-color: rgba(0,0,0,0.6);
   position: fixed;
   top: 0;
@@ -21,8 +22,13 @@
 
 .closeIcon {  
   position: absolute;
-  right: -30px;
+  right: -35px;
   cursor: pointer;
+}
+
+.closeIcon:hover {  
+  width: 26px;
+  height: 26px;
 }
 
 @keyframes popupZoomOut {

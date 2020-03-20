@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import styles from './pizza.module.css';
 import Button from '../../ui-kit/button/button.component';
@@ -8,30 +8,27 @@ const Pizza = ({ pizza, ingredients }) => {
   const [pizzaIngredientsData, setPizzaIngredientsData] = useState([]);
   const [pizzaIngredients, setPizzaIngredients] = useState('');
   const dispatch = useDispatch();
-  
-  useEffect(() => {
-    setPizzaIngredientsData(getIngredientsData(pizza.ingredients));
-    setPizzaIngredients(getIngredientsNames(pizzaIngredientsData));
-    // eslint-disable-next-line
-  }, [pizza, ingredients]);
 
-  useEffect(() => {
-    setPizzaIngredients(getIngredientsNames(pizzaIngredientsData));
-    // eslint-disable-next-line
-  }, [pizzaIngredientsData]);
-  
-  const getIngredientsData = (pizzaIngredients) => {
+  const getIngredientsData = useCallback((pizzaIngredients) => {
     return pizzaIngredients.map((ingredient) => (   
       {...ingredients.find(item => item.id === ingredient.id), ...ingredient}
     ))
-  }
+  }, [ingredients]);
 
   const getIngredientsNames = (ingredients) => {
     return ingredients.map((ingredient) => (
       ingredient.name
     )).join(', ');
   }
+  
+  useEffect(() => {
+    setPizzaIngredientsData(getIngredientsData(pizza.ingredients));
+  }, [pizza, ingredients, getIngredientsData]);
 
+  useEffect(() => {
+    setPizzaIngredients(getIngredientsNames(pizzaIngredientsData));
+  }, [pizzaIngredientsData, pizzaIngredients]);
+  
   const openPopUp = () => {
     dispatch(togglePopUp(true));
   }

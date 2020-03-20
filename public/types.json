@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Вегетарианские",
+    "type": "type1",
+    "isSelected": false
+  },
+  {
+    "id": 2,
+    "name": "Мясные",
+    "type": "type2",
+    "isSelected": false
+  },
+  {
+    "id": 3,
+    "name": "Острые",
+    "type": "type3",
+    "isSelected": false
+  },
+  {
+    "id": 4,
+    "name": "С курицей",
+    "type": "type4",
+    "isSelected": false
+  },
+  {
+    "id": 5,
+    "name": "С морепродуктами",
+    "type": "type5",
+    "isSelected": false
+  }
+]

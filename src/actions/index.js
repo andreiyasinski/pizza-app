@@ -89,3 +89,40 @@ export const togglePopUp = (isPopUpOpen) => ({
     isPopUpOpen
   },
 });
+
+
+export const GET_TYPES_REQUEST = 'GET_TYPES_REQUEST';
+export const GET_TYPES_SUCCESS = 'GET_TYPES_SUCCESS';
+export const GET_TYPES_FAILURE = 'GET_TYPES_FAILURE';
+
+export const getTypesRequest = () => {
+  return {
+    type: GET_TYPES_REQUEST
+  }
+}
+
+export const getTypesSuccess = (items) => ({
+  type: GET_TYPES_SUCCESS,
+  payload: {
+    items,
+  },
+});
+
+export const getTypesFailure = (error) => ({
+  type: GET_TYPES_FAILURE,
+  payload: {
+    error,
+  },
+});
+
+export const getTypes = () => (dispatch) => {
+  dispatch(getTypesRequest());
+
+  return axios('/types.json')
+    .then((response) => {
+      dispatch(getTypesSuccess(response.data));
+    })
+    .catch((err) => {
+      dispatch(getTypesFailure(err));
+    });
+};
