@@ -13,7 +13,12 @@ const Filter = ({ onClick, pizzaTypes }) => {
     <ul className={styles.container}>
       {
         types.map(item => (
-          <FilterItem item={item} onClick={onClick} key={item.id} id={item.id} />
+          <FilterItem
+            item={item}
+            onClick={onClick}
+            key={item.id}
+            id={item.id}
+          />
         ))
       }
     </ul>

@@ -7,6 +7,7 @@
       "medium": "14.90",
       "big": "19.90"
     },
+    "type": [4],
     "image": "images/image-1.jpg",
     "ingredients": [
       {
@@ -51,6 +52,7 @@
       "medium": "11.90",
       "big": "16.40"
     },
+    "type": [2],
     "image": "images/image-2.jpeg",
     "ingredients": [
       {
@@ -79,6 +81,7 @@
       "medium": "11.90",
       "big": "16.40"
     },
+    "type": [2],
     "image": "images/image-3.jpeg",
     "ingredients": [
       {
@@ -107,6 +110,7 @@
       "medium": "12.90",
       "big": "17.90"
     },
+    "type": [2],
     "image": "images/image-4.jpg",
     "ingredients": [
       {
@@ -135,6 +139,7 @@
       "medium": "12.90",
       "big": "17.90"
     },
+    "type": [2],
     "image": "images/image-5.jpg",
     "ingredients": [
       {
@@ -159,6 +164,7 @@
       "medium": "14.90",
       "big": "19.90"
     },
+    "type": [4],
     "image": "images/image-6.jpg",
     "ingredients": [
       {
@@ -187,6 +193,7 @@
       "medium": "12.90",
       "big": "17.90"
     },
+    "type": [4],
     "image": "images/image-7.jpg",
     "ingredients": [
       {
@@ -209,12 +216,13 @@
   },
   {
     "id": 8,
-    "name": "Кисло-сладкий цыпленок",
+    "name": "Чизбургер пицца",
     "price": {
       "small": "10.90",
       "medium": "16.90",
       "big": "21.90"
     },
+    "type": [2],
     "image": "images/image-8.jpg",
     "ingredients": [
       {
@@ -251,6 +259,7 @@
       "medium": "14.90",
       "big": "19.90"
     },
+    "type": [2, 4],
     "image": "images/image-9.jpg",
     "ingredients": [
       {
@@ -287,6 +296,7 @@
       "medium": "16.90",
       "big": "21.90"
     },
+    "type": [1, 5],
     "image": "images/image-10.jpg",
     "ingredients": [
       {
@@ -319,6 +329,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [2],
     "image": "images/image-11.jpg",
     "ingredients": [
       {
@@ -347,6 +358,7 @@
       "medium": "20.90",
       "big": "24.90"
     },
+    "type": [2, 3],
     "image": "images/image-12.jpg",
     "ingredients": [
       {
@@ -387,6 +399,7 @@
       "medium": "20.90",
       "big": "24.90"
     },
+    "type": [2, 4],
     "image": "images/image-13.jpg",
     "ingredients": [
       {
@@ -435,6 +448,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [2],
     "image": "images/image-14.jpg",
     "ingredients": [
       {
@@ -475,6 +489,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [2, 3],
     "image": "images/image-15.jpg",
     "ingredients": [
       {
@@ -511,6 +526,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [4],
     "image": "images/image-16.jpg",
     "ingredients": [
       {
@@ -547,6 +563,7 @@
       "medium": "16.90",
       "big": "21.90"
     },
+    "type": [4],
     "image": "images/image-17.jpg",
     "ingredients": [
       {
@@ -575,6 +592,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [4],
     "image": "images/image-18.jpg",
     "ingredients": [
       {
@@ -611,6 +629,7 @@
       "medium": "14.90",
       "big": "19.90"
     },
+    "type": [2],
     "image": "images/image-19.jpg",
     "ingredients": [
       {
@@ -647,6 +666,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [3, 4],
     "image": "images/image-20.jpg",
     "ingredients": [
       {
@@ -691,6 +711,7 @@
       "medium": "14.90",
       "big": "19.90"
     },
+    "type": [1],
     "image": "images/image-21.jpg",
     "ingredients": [
       {
@@ -739,6 +760,7 @@
       "medium": "14.90",
       "big": "19.90"
     },
+    "type": [2],
     "image": "images/image-22.jpg",
     "ingredients": [
       {
@@ -763,6 +785,7 @@
       "medium": "16.90",
       "big": "21.90"
     },
+    "type": [2],
     "image": "images/image-23.jpg",
     "ingredients": [
       {
@@ -807,6 +830,7 @@
       "medium": "18.90",
       "big": "22.90"
     },
+    "type": [1],
     "image": "images/image-24.jpg",
     "ingredients": [
       {
@@ -835,6 +859,7 @@
       "medium": "12.90",
       "big": "17.90"
     },
+    "type": [1],
     "image": "images/image-25.jpg",
     "ingredients": [
       {
@@ -863,6 +888,7 @@
       "medium": "12.90",
       "big": "17.90"
     },
+    "type": [2],
     "image": "images/image-26.jpeg",
     "ingredients": [
       {
@@ -891,6 +917,7 @@
       "medium": "12.90",
       "big": "16.90"
     },
+    "type": [1],
     "image": "images/image-27.jpg",
     "ingredients": [
       {

@@ -23,6 +23,18 @@
   color: #fff;
 }
 
+.checked {
+  background-color: #f90;
+  color: #fff;
+  border-color: #f90;
+}
+
+.checked:hover {
+  background-color: #f90;
+  color: #fff;
+  border-color: #f90;
+}
+
 .text {
   line-height: 1;
   font-weight: 700;
