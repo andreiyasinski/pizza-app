@@ -1,32 +1,22 @@
 [
   {
     "id": 1,
-    "name": "Вегетарианские",
-    "type": "type1",
-    "isSelected": false
+    "name": "Вегетарианские"
   },
   {
     "id": 2,
-    "name": "Мясные",
-    "type": "type2",
-    "isSelected": false
+    "name": "Мясные"
   },
   {
     "id": 3,
-    "name": "Острые",
-    "type": "type3",
-    "isSelected": false
+    "name": "Острые"
   },
   {
     "id": 4,
-    "name": "С курицей",
-    "type": "type4",
-    "isSelected": false
+    "name": "С курицей"
   },
   {
     "id": 5,
-    "name": "С морепродуктами",
-    "type": "type5",
-    "isSelected": false
+    "name": "С морепродуктами"
   }
 ]

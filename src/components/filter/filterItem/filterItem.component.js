@@ -20,7 +20,7 @@ const FilterItem = ({ item, onClick }) => {
           className={styles.input}
           onChange={handleCheckbox}
           type="checkbox"
-          name={item.type}
+          name={item.name}
           id={item.id}
           checked={isChecked}
         />
