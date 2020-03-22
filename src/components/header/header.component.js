@@ -15,9 +15,13 @@ const Header = () => {
   const nav = useRef(null);
 
   const handleMenu = (e) => {
-    if (e.target !== nav.current) {
+    if (e.target === e.currentTarget) {
       dispatch(toggleMenu(!isMenuOpen));
     }
+  }
+
+  const closeMenu = () => {
+    dispatch(toggleMenu(false))
   }
 
   return (
@@ -37,12 +41,11 @@ const Header = () => {
           ref={nav}
           >
             <ul className={styles.list}>
-              
-              <li><NavLink to="/" exact className={styles.link}>Меню</NavLink></li>
-              <li><NavLink to="/" exact className={styles.link}>Акции</NavLink></li>
-              <li><NavLink to="/" exact className={styles.link}>Кэшбэк</NavLink></li>
-              <li><NavLink to="/about" className={styles.link}>О нас</NavLink></li>
-              <li><NavLink  to="/" exact className={styles.link}>Доставка</NavLink></li>
+              <li><NavLink onClick={closeMenu} to="/" exact className={styles.link} >Меню</NavLink></li>
+              <li><NavLink onClick={closeMenu} to="/" exact className={styles.link}>Акции</NavLink></li>
+              <li><NavLink onClick={closeMenu} to="/" exact className={styles.link}>Кэшбэк</NavLink></li>
+              <li><NavLink onClick={closeMenu} to="/about" className={styles.link}>О нас</NavLink></li>
+              <li><NavLink onClick={closeMenu}  to="/" exact className={styles.link}>Доставка</NavLink></li>
             </ul>
           </nav>
         </div>
@@ -55,7 +58,7 @@ const Header = () => {
         className={cn(styles.menuBlock, {
           [styles.menuActive] : isMenuOpen
         })}
-        onClick={handleMenu}
+        onClick={() => dispatch(toggleMenu(!isMenuOpen))}
       >
         <span className={styles.menu}>
           <span className={styles.menuLine}></span>

@@ -12,16 +12,18 @@
 }
 
 .container {
+  display: flex;
   position: relative;
-  width: 200px;
-  height: 200px;
+  padding: 30px 20px;
   background: #fff;
   border-radius: 10px;
   animation: popupZoomOut .15s ease-in-out;
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
 }
 
 .closeIcon {  
   position: absolute;
+  top: 0;
   right: -35px;
   cursor: pointer;
 }
@@ -29,6 +31,33 @@
 .closeIcon:hover {  
   width: 26px;
   height: 26px;
+}
+
+.imageBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 530px;
+}
+
+.image {
+  width: 90%;
+}
+
+.description {
+  width: 350px;
+  height: 610px;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 @keyframes popupZoomOut {

@@ -1,8 +1,10 @@
 .container {
   line-height: 1;
   border: 2px solid #f90;
+  background: linear-gradient(45deg, #f90, transparent);
   padding: 22px 5px;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: 600;
   color: #1E1C22;
 }
