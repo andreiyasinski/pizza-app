@@ -1,16 +1,18 @@
 import React, { useRef } from 'react';
 import styles from './popUp.module.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { togglePopUp } from '../../actions';
 
 const PopUp = () => {
   const dispatch = useDispatch();
+  const pizza = useSelector(state => state.popUp.data);
+  console.log(pizza)
 
   const card = useRef(null);
 
   const closePopUp = (e) => {
     if (e.target !== card.current) {
-      dispatch(togglePopUp(false));
+      dispatch(togglePopUp(false, {}));
     }
   }
 

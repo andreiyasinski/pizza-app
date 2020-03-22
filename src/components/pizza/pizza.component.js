@@ -30,7 +30,7 @@ const Pizza = ({ pizza, ingredients }) => {
   }, [pizzaIngredientsData, pizzaIngredients]);
   
   const openPopUp = () => {
-    dispatch(togglePopUp(true));
+    dispatch(togglePopUp(true, { ...pizza, ingredients: pizzaIngredientsData }));
   }
 
   return (
@@ -58,7 +58,6 @@ const Pizza = ({ pizza, ingredients }) => {
               <p className={styles.price}>{`${pizza.price.small} руб.`}</p>
             </div>
           </div>
-
         </div>
       </div>
     </li>

@@ -1,7 +1,6 @@
 .container {
   display: flex;
   align-items: center;
-  font-size: 30px;
   line-height: 35px;
   font-weight: 700;
   color: #817E71;
@@ -27,4 +26,10 @@
   align-items: center;
   margin-right: 14px;
   fill: #817E71
+}
+
+@media screen and (max-width: 480px) {
+  .phoneIcon {
+    display: none;
+  }
 }

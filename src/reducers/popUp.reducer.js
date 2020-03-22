@@ -1,7 +1,8 @@
 import { TOGGLE_POPUP } from '../actions';
 
 const initialState  = {
-  isPopUpOpen: false
+  isPopUpOpen: false,
+  data: {}
 };
 
 const popUp = (state = initialState, action) => {
@@ -10,6 +11,7 @@ const popUp = (state = initialState, action) => {
       return {
         ...state,
         isPopUpOpen: action.payload.isPopUpOpen,
+        data: action.payload.data
       };
     default:
       return state

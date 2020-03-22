@@ -83,10 +83,11 @@ export const toggleMenu = (isMenuOpen) => ({
 
 export const TOGGLE_POPUP = 'TOGGLE_POPUP';
 
-export const togglePopUp = (isPopUpOpen) => ({
+export const togglePopUp = (isPopUpOpen, data) => ({
   type: TOGGLE_POPUP,
   payload: {
-    isPopUpOpen
+    isPopUpOpen,
+    data
   },
 });
 

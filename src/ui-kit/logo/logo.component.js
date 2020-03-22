@@ -1,11 +1,17 @@
 import React from 'react';
 import styles from './logo.module.css';
+import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
 
-const Logo = () => {
+const Logo = ({ className }) => {
   return (
-    <Link to="/" className={styles.container}>PIZZA_DELIVERY</Link>
+    <Link
+      to="/"
+      className={cn(styles.container, className)}
+    >
+      PIZZA DELIVERY
+    </Link>
   );
 };
 
