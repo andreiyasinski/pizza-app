@@ -2,10 +2,25 @@
   {
     "id": 1,
     "name": "Аррива",
-    "price": {
-      "small": "8.90",
-      "medium": "14.90",
-      "big": "19.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "19.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [4],
     "image": "images/image-1.jpg",
@@ -47,10 +62,25 @@
   {
     "id": 2,
     "name": "Пепперони Фреш с перцем",
-    "price": {
-      "small": "6.90",
-      "medium": "11.90",
-      "big": "16.40"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "11.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "16.40",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-2.jpeg",
@@ -76,10 +106,25 @@
   {
     "id": 3,
     "name": "Пепперони Фреш с томатами",
-    "price": {
-      "small": "6.90",
-      "medium": "11.90",
-      "big": "16.40"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "11.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "16.40",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-3.jpeg",
@@ -105,10 +150,25 @@
   {
     "id": 4,
     "name": "Ветчина и грибы",
-    "price": {
-      "small": "6.90",
-      "medium": "12.90",
-      "big": "17.90"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "17.40",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-4.jpg",
@@ -134,10 +194,25 @@
   {
     "id": 5,
     "name": "Ветчина и сыр",
-    "price": {
-      "small": "6.90",
-      "medium": "12.90",
-      "big": "17.90"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "17.40",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-5.jpg",
@@ -159,10 +234,25 @@
   {
     "id": 6,
     "name": "Гавайская",
-    "price": {
-      "small": "8.90",
-      "medium": "14.90",
-      "big": "19.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "19.40",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [4],
     "image": "images/image-6.jpg",
@@ -188,10 +278,25 @@
   {
     "id": 7,
     "name": "Кисло-сладкий цыпленок",
-    "price": {
-      "small": "6.90",
-      "medium": "12.90",
-      "big": "17.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "17.40",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [4],
     "image": "images/image-7.jpg",
@@ -217,10 +322,25 @@
   {
     "id": 8,
     "name": "Чизбургер пицца",
-    "price": {
-      "small": "10.90",
-      "medium": "16.90",
-      "big": "21.90"
+    "size": {
+      "small": {
+        "price": "10.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "16.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "21.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-8.jpg",
@@ -254,10 +374,25 @@
   {
     "id": 9,
     "name": "Крэйзи пепперони",
-    "price": {
-      "small": "8.90",
-      "medium": "14.90",
-      "big": "19.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "19.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2, 4],
     "image": "images/image-9.jpg",
@@ -291,10 +426,25 @@
   {
     "id": 10,
     "name": "Креветки по-азиатски",
-    "price": {
-      "small": "10.90",
-      "medium": "16.90",
-      "big": "21.90"
+    "size": {
+      "small": {
+        "price": "10.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "16.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "21.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [1, 5],
     "image": "images/image-10.jpg",
@@ -324,10 +474,25 @@
   {
     "id": 11,
     "name": "Двойная пепперони",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-11.jpg",
@@ -353,10 +518,25 @@
   {
     "id": 12,
     "name": "Супермясная",
-    "price": {
-      "small": "14.90",
-      "medium": "20.90",
-      "big": "24.90"
+    "size": {
+      "small": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "20.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "24.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2, 3],
     "image": "images/image-12.jpg",
@@ -394,10 +574,25 @@
   {
     "id": 13,
     "name": "От Шефа",
-    "price": {
-      "small": "14.90",
-      "medium": "20.90",
-      "big": "24.90"
+    "size": {
+      "small": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "20.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "24.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2, 4],
     "image": "images/image-13.jpg",
@@ -443,10 +638,25 @@
   {
     "id": 14,
     "name": "Дон Бекон",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-14.jpg",
@@ -484,10 +694,25 @@
   {
     "id": 15,
     "name": "Мясная",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2, 3],
     "image": "images/image-15.jpg",
@@ -521,10 +746,25 @@
   {
     "id": 16,
     "name": "Цыпленок барбекю",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [4],
     "image": "images/image-16.jpg",
@@ -558,10 +798,25 @@
   {
     "id": 17,
     "name": "Сырный цыпленок",
-    "price": {
-      "small": "10.90",
-      "medium": "16.90",
-      "big": "21.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [4],
     "image": "images/image-17.jpg",
@@ -587,10 +842,25 @@
   {
     "id": 18,
     "name": "Цыпленок ранч",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [4],
     "image": "images/image-18.jpg",
@@ -624,10 +894,25 @@
   {
     "id": 19,
     "name": "Итальянская",
-    "price": {
-      "small": "8.90",
-      "medium": "14.90",
-      "big": "19.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "19.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-19.jpg",
@@ -661,10 +946,25 @@
   {
     "id": 20,
     "name": "Мексиканская",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [3, 4],
     "image": "images/image-20.jpg",
@@ -706,10 +1006,25 @@
   {
     "id": 21,
     "name": "Овощи и грибы",
-    "price": {
-      "small": "8.90",
-      "medium": "14.90",
-      "big": "19.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "19.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [1],
     "image": "images/image-21.jpg",
@@ -755,10 +1070,25 @@
   {
     "id": 22,
     "name": "Пепперони",
-    "price": {
-      "small": "8.90",
-      "medium": "14.90",
-      "big": "19.90"
+    "size": {
+      "small": {
+        "price": "8.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "14.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "19.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-22.jpg",
@@ -780,10 +1110,25 @@
   {
     "id": 23,
     "name": "Четыре сезона",
-    "price": {
-      "small": "10.90",
-      "medium": "16.90",
-      "big": "21.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-23.jpg",
@@ -825,10 +1170,25 @@
   {
     "id": 24,
     "name": "Четыре сыра",
-    "price": {
-      "small": "12.90",
-      "medium": "18.90",
-      "big": "22.90"
+    "size": {
+      "small": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "18.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "22.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [1],
     "image": "images/image-24.jpg",
@@ -854,10 +1214,25 @@
   {
     "id": 25,
     "name": "Маргарита",
-    "price": {
-      "small": "6.90",
-      "medium": "12.90",
-      "big": "17.90"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "17.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [1],
     "image": "images/image-25.jpg",
@@ -883,10 +1258,25 @@
   {
     "id": 26,
     "name": "Испанские колбаски чоризо",
-    "price": {
-      "small": "6.90",
-      "medium": "12.90",
-      "big": "17.90"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "17.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [2],
     "image": "images/image-26.jpeg",
@@ -912,10 +1302,25 @@
   {
     "id": 27,
     "name": "Сырная",
-    "price": {
-      "small": "6.90",
-      "medium": "12.90",
-      "big": "16.90"
+    "size": {
+      "small": {
+        "price": "6.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "medium": {
+        "price": "12.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      },
+      "big": {
+        "price": "16.90",
+        "name": "Маленькая",
+        "diameter": "25",
+        "weight": "440"
+      }
     },
     "type": [1],
     "image": "images/image-27.jpg",

@@ -55,7 +55,7 @@ const Pizza = ({ pizza, ingredients }) => {
               >
                 Купить
               </Button>
-              <p className={styles.price}>{`${pizza.price.small} руб.`}</p>
+              <p className={styles.price}>{`${pizza.size.small.price} руб.`}</p>
             </div>
           </div>
         </div>
