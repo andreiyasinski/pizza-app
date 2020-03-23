@@ -9,6 +9,7 @@
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 100;
 }
 
 .container {
@@ -48,6 +49,9 @@
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 40%;
   height: 610px;
   padding: 30px 20px;
@@ -59,6 +63,12 @@
   line-height: 1.1;
 }
 
+.subtitle {
+  font-size: 14px;
+  color: rgb(135, 134, 134);
+  margin-bottom: 5px;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +76,10 @@
   font-size: 15px;
   line-height: 1.375;
   margin-bottom: 15px;
+}
+
+.button {
+  margin-top: auto;
 }
 
 @keyframes popupZoomOut {

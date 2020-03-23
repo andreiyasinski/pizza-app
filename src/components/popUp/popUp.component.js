@@ -3,15 +3,20 @@ import styles from './popUp.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { togglePopUp } from '../../actions';
 import Ingredient from './ingredient/ingredient.component';
-import PizzaSize from './pizzaSize/pizzaSize.component';
+import Button from '../../ui-kit/button/button.component';
+import SizeSelector from './sizeSelector/sizeSelector.component';
+import DoughSelector from './doughSelector/doughSelector.component';
 
 const PopUp = () => {
   const [removed, setRemoved] = useState([]);
+  const [size, setSize] = useState("small");
+  const [duoghType, setDuoghType] = useState("type1");
 
-  const [size, setSize] = useState("small")
-  
   const dispatch = useDispatch();
   const pizza = useSelector(state => state.popUp.data);
+
+  const { price, diameter, weight } = pizza.size[size];
+  const selectedDoughType = pizza.dough[duoghType];
   
   const closePopUp = (e) => {
     if (e.target === e.currentTarget) {
@@ -25,8 +30,14 @@ const PopUp = () => {
     setRemoved([...temp]);
   }
 
-  const handleRadio = (e) => {
+  const changeSize = (e) => {
+    let temp = e.target.value === "small" ? "type1" : duoghType;
     setSize(e.target.value);
+    setDuoghType(temp);
+  }
+
+  const changeDoughType = (e) => {
+    setDuoghType(e.target.value);
   }
 
   return (
@@ -42,6 +53,9 @@ const PopUp = () => {
           </div>
           <div className={styles.description}>
             <h2 className={styles.title}>{pizza.name}</h2>
+            <p className={styles.subtitle}>
+              {`${diameter} см, ${selectedDoughType.toLowerCase()} тесто, ${weight} г`}
+            </p>
             <ul className={styles.list}>
               {
                 pizza.ingredients.map( (item, i) => (
@@ -55,7 +69,18 @@ const PopUp = () => {
                 ))
               }
             </ul>
-            <PizzaSize handleRadio={handleRadio} size={size} />
+            <SizeSelector
+              changeSize={changeSize}
+              size={size}
+            />
+            <DoughSelector
+              changeDoughType={changeDoughType}
+              duoghType={duoghType}
+              size={size}
+            />
+            <Button theme="secondary" className={styles.button}>
+              {`Добавить в корзину за ${price} руб.`}
+            </Button>
           </div>
         </div>
         <svg onClick={() => dispatch(togglePopUp(false, {}))} className={styles.closeIcon} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

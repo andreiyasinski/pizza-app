@@ -18,7 +18,7 @@
 .image {
   max-width: 100%;
   height: auto;
-  /* transform: translateX(-35px) translateY(-60px); */
+  cursor: pointer;
 }
 
 .info {

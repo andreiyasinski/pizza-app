@@ -37,6 +37,7 @@ const Pizza = ({ pizza, ingredients }) => {
     <li className={styles.wrapper}>
       <div className={styles.container}>
         <img
+          onClick={openPopUp}
           className={styles.image}
           src={pizza.image}
           alt={pizza.name}
@@ -50,7 +51,7 @@ const Pizza = ({ pizza, ingredients }) => {
             <p className={styles.ingredients}>{pizzaIngredients}</p>
             <div className={styles.controls}>
               <Button
-                theme="secondary"
+                theme="primary"
                 onClick={openPopUp}
               >
                 Купить

@@ -12,15 +12,19 @@
       "medium": {
         "price": "14.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "630"
       },
       "big": {
         "price": "19.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "950"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [4],
     "image": "images/image-1.jpg",
@@ -72,15 +76,19 @@
       "medium": {
         "price": "11.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "630"
       },
       "big": {
         "price": "16.40",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "950"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-2.jpeg",
@@ -116,15 +124,19 @@
       "medium": {
         "price": "11.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "630"
       },
       "big": {
         "price": "16.40",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "980"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-3.jpeg",
@@ -160,15 +172,19 @@
       "medium": {
         "price": "12.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "17.40",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "980"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-4.jpg",
@@ -204,15 +220,19 @@
       "medium": {
         "price": "12.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "690"
       },
       "big": {
         "price": "17.40",
         "name": "Маленькая",
         "diameter": "25",
-        "weight": "440"
+        "weight": "1020"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-5.jpg",
@@ -244,15 +264,19 @@
       "medium": {
         "price": "14.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "650"
       },
       "big": {
         "price": "19.40",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "990"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [4],
     "image": "images/image-6.jpg",
@@ -288,15 +312,19 @@
       "medium": {
         "price": "12.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "17.40",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [4],
     "image": "images/image-7.jpg",
@@ -332,15 +360,19 @@
       "medium": {
         "price": "16.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "650"
       },
       "big": {
         "price": "21.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "990"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-8.jpg",
@@ -384,15 +416,19 @@
       "medium": {
         "price": "14.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "640"
       },
       "big": {
         "price": "19.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "980"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2, 4],
     "image": "images/image-9.jpg",
@@ -436,15 +472,19 @@
       "medium": {
         "price": "16.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "670"
       },
       "big": {
         "price": "21.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "40",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [1, 5],
     "image": "images/image-10.jpg",
@@ -484,15 +524,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "700"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "1100"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-11.jpg",
@@ -528,15 +572,19 @@
       "medium": {
         "price": "20.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "24.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2, 3],
     "image": "images/image-12.jpg",
@@ -584,15 +632,19 @@
       "medium": {
         "price": "20.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "24.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2, 4],
     "image": "images/image-13.jpg",
@@ -648,15 +700,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "690"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "1020"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-14.jpg",
@@ -704,15 +760,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "690"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "990"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2, 3],
     "image": "images/image-15.jpg",
@@ -756,15 +816,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "640"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [4],
     "image": "images/image-16.jpg",
@@ -808,15 +872,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "670"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "950"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [4],
     "image": "images/image-17.jpg",
@@ -852,15 +920,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "630"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "970"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [4],
     "image": "images/image-18.jpg",
@@ -904,15 +976,19 @@
       "medium": {
         "price": "14.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "690"
       },
       "big": {
         "price": "19.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-19.jpg",
@@ -956,15 +1032,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "650"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "980"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [3, 4],
     "image": "images/image-20.jpg",
@@ -1016,15 +1096,19 @@
       "medium": {
         "price": "14.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "620"
       },
       "big": {
         "price": "19.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "910"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [1],
     "image": "images/image-21.jpg",
@@ -1080,15 +1164,19 @@
       "medium": {
         "price": "14.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "19.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "950"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-22.jpg",
@@ -1120,15 +1208,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "990"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-23.jpg",
@@ -1180,15 +1272,19 @@
       "medium": {
         "price": "18.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "680"
       },
       "big": {
         "price": "22.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [1],
     "image": "images/image-24.jpg",
@@ -1224,15 +1320,19 @@
       "medium": {
         "price": "12.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "610"
       },
       "big": {
         "price": "17.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "890"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [1],
     "image": "images/image-25.jpg",
@@ -1268,15 +1368,19 @@
       "medium": {
         "price": "12.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "620"
       },
       "big": {
         "price": "17.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "960"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [2],
     "image": "images/image-26.jpeg",
@@ -1312,15 +1416,19 @@
       "medium": {
         "price": "12.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "30",
+        "weight": "610"
       },
       "big": {
         "price": "16.90",
         "name": "Маленькая",
-        "diameter": "25",
-        "weight": "440"
+        "diameter": "35",
+        "weight": "910"
       }
+    },
+    "dough": {
+      "type1": "Традиционное",
+      "type2": "Тонкое"
     },
     "type": [1],
     "image": "images/image-27.jpg",
