@@ -2,171 +2,205 @@
   {
     "id": 1,
     "name": "cладкий перец",
+    "image": "",
     "price": ""
   },
   {
     "id": 2,
     "name": "пепперони",
+    "image": "",
     "price": ""
   },
   {
     "id": 3,
     "name": "моцарелла",
+    "image": "images/extra-3.png",
     "price": "2.40"
   },
   {
     "id": 4,
     "name": "томатный соус",
+    "image": "",
     "price": ""
   },
   {
     "id": 5,
     "name": "томаты",
+    "image": "",
     "price": ""
   },
   {
     "id": 6,
     "name": "ветчина",
+    "image": "images/extra-6.png",
     "price": "2.40"
   },
   {
     "id": 7,
     "name": "шампиньоны",
+    "image": "images/extra-7.png",
     "price": "1.80"
   },
   {
     "id": 8,
     "name": "сливочный соус",
+    "image": "",
     "price": ""
   },
   {
     "id": 9,
     "name": "ананасы",
+    "image": "",
     "price": ""
   },
   {
     "id": 10,
     "name": "цыпленок",
+    "image": "images/extra-10.png",
     "price": "2.40"
   },
   {
     "id": 11,
     "name": "кисло-сладкий соус",
+    "image": "",
     "price": ""
   },
   {
     "id": 12,
     "name": "сладкий перец",
+    "image": "images/extra-12.png",
     "price": "1.80"
   },
   {
     "id": 13,
     "name": "халапенью",
+    "image": "images/extra-13.png",
     "price": "1.80"
   },
   {
     "id": 14,
     "name": "соус бургер",
+    "image": "",
     "price": ""
   },
   {
     "id": 15,
     "name": "мясной соус болоньезе",
+    "image": "",
     "price": ""
   },
   {
     "id": 16,
     "name": "соленые огурчики",
+    "image": "images/extra-16.png",
     "price": "1.80"
   },
   {
     "id": 17,
     "name": "красный лук",
+    "image": "",
     "price": ""
   },
   {
     "id": 18,
     "name": "бекон",
+    "image": "images/extra-18.png",
     "price": "2.80"
   },
   {
     "id": 19,
     "name": "пикантная пепперони",
+    "image": "",
     "price": ""
   },
   {
     "id": 20,
     "name": "черный кунжут",
+    "image": "",
     "price": ""
   },
   {
     "id": 21,
     "name": "креветки",
+    "image": "",
     "price": ""
   },
   {
     "id": 22,
     "name": "сыр блю чиз",
+    "image": "images/extra-22.png",
     "price": "2.40"
   },
   {
     "id": 23,
     "name": "острая чоризо",
+    "image": "images/extra-23.png",
     "price": "2.40"
   },
   {
     "id": 24,
     "name": "фарш из говядины",
+    "image": "",
     "price": ""
   },
   {
     "id": 25,
     "name": "смесь сыров чеддар и пармезан",
+    "image": "images/extra-25.png",
     "price": "2.40"
   },
   {
     "id": 26,
     "name": "маслины",
+    "image": "",
     "price": ""
   },
   {
     "id": 27,
     "name": "соус барбекю",
+    "image": "",
     "price": ""
   },
   {
     "id": 28,
     "name": "соус ранч",
+    "image": "",
     "price": ""
   },
   {
     "id": 29,
     "name": "итальянские травы",
+    "image": "",
     "price": ""
   },
   {
     "id": 30,
     "name": "соус сальса",
+    "image": "",
     "price": ""
   },
   {
     "id": 31,
     "name": "кубики брынзы",
+    "image": "images/extra-31.png",
     "price": "2.40"
   },
   {
     "id": 32,
     "name": "соус чипотле",
+    "image": "",
     "price": ""
   },
   {
     "id": 33,
     "name": "чеснок",
+    "image": "",
     "price": ""
   },
   {
     "id": 34,
     "name": "сырный соус",
+    "image": "",
     "price": ""
   }
 ]

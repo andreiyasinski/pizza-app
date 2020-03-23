@@ -14,7 +14,7 @@ const PopUp = () => {
 
   const dispatch = useDispatch();
   const pizza = useSelector(state => state.popUp.data);
-
+  
   const { price, diameter, weight } = pizza.size[size];
   const selectedDoughType = pizza.dough[duoghType];
   
@@ -25,8 +25,7 @@ const PopUp = () => {
   }
 
   const handleRemoved = (name, isSelected) => {
-    const temp = removed;
-    isSelected ? temp.push(name) : temp.splice(temp.indexOf(name), 1);
+    const temp = isSelected ? [...removed, name] : removed.filter(v => v !== name);
     setRemoved([...temp]);
   }
 

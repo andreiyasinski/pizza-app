@@ -26,6 +26,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [7, 3, 13],
     "type": [4],
     "image": "images/image-1.jpg",
     "ingredients": [
@@ -90,6 +91,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 18, 25],
     "type": [2],
     "image": "images/image-2.jpeg",
     "ingredients": [
@@ -138,6 +140,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [2],
     "image": "images/image-3.jpeg",
     "ingredients": [
@@ -186,6 +189,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [25, 10, 7],
     "type": [2],
     "image": "images/image-4.jpg",
     "ingredients": [
@@ -234,6 +238,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [25, 10, 7],
     "type": [2],
     "image": "images/image-5.jpg",
     "ingredients": [
@@ -278,6 +283,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 10, 6],
     "type": [4],
     "image": "images/image-6.jpg",
     "ingredients": [
@@ -326,6 +332,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 12, 13],
     "type": [4],
     "image": "images/image-7.jpg",
     "ingredients": [
@@ -374,6 +381,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 18],
     "type": [2],
     "image": "images/image-8.jpg",
     "ingredients": [
@@ -430,6 +438,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 7],
     "type": [2, 4],
     "image": "images/image-9.jpg",
     "ingredients": [
@@ -486,6 +495,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 12],
     "type": [1, 5],
     "image": "images/image-10.jpg",
     "ingredients": [
@@ -538,6 +548,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 22, 7],
     "type": [2],
     "image": "images/image-11.jpg",
     "ingredients": [
@@ -586,6 +597,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 10, 6],
     "type": [2, 3],
     "image": "images/image-12.jpg",
     "ingredients": [
@@ -646,6 +658,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [2, 4],
     "image": "images/image-13.jpg",
     "ingredients": [
@@ -714,6 +727,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 18],
     "type": [2],
     "image": "images/image-14.jpg",
     "ingredients": [
@@ -774,6 +788,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [2, 3],
     "image": "images/image-15.jpg",
     "ingredients": [
@@ -830,6 +845,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 7],
     "type": [4],
     "image": "images/image-16.jpg",
     "ingredients": [
@@ -886,6 +902,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [25, 10, 7],
     "type": [4],
     "image": "images/image-17.jpg",
     "ingredients": [
@@ -934,6 +951,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 7],
     "type": [4],
     "image": "images/image-18.jpg",
     "ingredients": [
@@ -990,6 +1008,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [2],
     "image": "images/image-19.jpg",
     "ingredients": [
@@ -1046,6 +1065,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 7],
     "type": [3, 4],
     "image": "images/image-20.jpg",
     "ingredients": [
@@ -1110,6 +1130,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 7],
     "type": [1],
     "image": "images/image-21.jpg",
     "ingredients": [
@@ -1178,6 +1199,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [2],
     "image": "images/image-22.jpg",
     "ingredients": [
@@ -1222,6 +1244,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 18],
     "type": [2],
     "image": "images/image-23.jpg",
     "ingredients": [
@@ -1286,6 +1309,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 10, 6],
     "type": [1],
     "image": "images/image-24.jpg",
     "ingredients": [
@@ -1334,6 +1358,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [1],
     "image": "images/image-25.jpg",
     "ingredients": [
@@ -1382,6 +1407,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [3, 13, 7],
     "type": [2],
     "image": "images/image-26.jpeg",
     "ingredients": [
@@ -1430,6 +1456,7 @@
       "type1": "Традиционное",
       "type2": "Тонкое"
     },
+    "extra": [13, 7, 18],
     "type": [1],
     "image": "images/image-27.jpg",
     "ingredients": [

@@ -6,12 +6,19 @@ import { togglePopUp } from '../../actions';
 
 const Pizza = ({ pizza, ingredients }) => {
   const [pizzaIngredientsData, setPizzaIngredientsData] = useState([]);
-  const [pizzaIngredients, setPizzaIngredients] = useState('');
+  const [pizzaExtraData, setPizzaExtraData] = useState([]);
+  const [pizzaIngredientsNames, setPizzaIngredientsNames] = useState('');
   const dispatch = useDispatch();
 
   const getIngredientsData = useCallback((pizzaIngredients) => {
     return pizzaIngredients.map((ingredient) => (   
       {...ingredients.find(item => item.id === ingredient.id), ...ingredient}
+    ))
+  }, [ingredients]);
+
+  const getExtraData = useCallback((pizzaExtra) => {
+    return pizzaExtra.map((ingredient) => (   
+      {...ingredients.find(item => item.id === ingredient)}
     ))
   }, [ingredients]);
 
@@ -23,14 +30,21 @@ const Pizza = ({ pizza, ingredients }) => {
   
   useEffect(() => {
     setPizzaIngredientsData(getIngredientsData(pizza.ingredients));
-  }, [pizza, ingredients, getIngredientsData]);
+    setPizzaExtraData(getExtraData(pizza.extra));
+  }, [pizza, ingredients, getIngredientsData, getExtraData]);
 
   useEffect(() => {
-    setPizzaIngredients(getIngredientsNames(pizzaIngredientsData));
-  }, [pizzaIngredientsData, pizzaIngredients]);
+    setPizzaIngredientsNames(getIngredientsNames(pizzaIngredientsData));
+  }, [pizzaIngredientsData, pizzaIngredientsNames]);
   
   const openPopUp = () => {
-    dispatch(togglePopUp(true, { ...pizza, ingredients: pizzaIngredientsData }));
+    dispatch(
+      togglePopUp(true, {
+        ...pizza,
+        ingredients: pizzaIngredientsData,
+        extra: pizzaExtraData
+      })
+    );
   }
 
   return (
@@ -46,9 +60,8 @@ const Pizza = ({ pizza, ingredients }) => {
           <h2 className={styles.title}>
             {pizza.name}
           </h2>
-
           <div className={styles.bottom}>
-            <p className={styles.ingredients}>{pizzaIngredients}</p>
+            <p className={styles.ingredients}>{pizzaIngredientsNames}</p>
             <div className={styles.controls}>
               <Button
                 theme="primary"
