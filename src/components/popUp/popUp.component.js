@@ -6,17 +6,19 @@ import Ingredient from './ingredient/ingredient.component';
 import Button from '../../ui-kit/button/button.component';
 import SizeSelector from './sizeSelector/sizeSelector.component';
 import DoughSelector from './doughSelector/doughSelector.component';
+import Extra from './extra/extra.component';
 
 const PopUp = () => {
   const [removed, setRemoved] = useState([]);
   const [size, setSize] = useState("small");
   const [duoghType, setDuoghType] = useState("type1");
-
-  const dispatch = useDispatch();
   const pizza = useSelector(state => state.popUp.data);
+  
+  const dispatch = useDispatch();
   
   const { price, diameter, weight } = pizza.size[size];
   const selectedDoughType = pizza.dough[duoghType];
+  const { extra } = pizza;
   
   const closePopUp = (e) => {
     if (e.target === e.currentTarget) {
@@ -77,6 +79,10 @@ const PopUp = () => {
               duoghType={duoghType}
               size={size}
             />
+            <h3 className={styles.addExtraText}>Добавить в пиццу</h3>
+            <ul className={styles.extraList}>
+              { extra.map( item => <Extra item={item} key={item.id} /> ) }
+            </ul>
             <Button theme="secondary" className={styles.button}>
               {`Добавить в корзину за ${price} руб.`}
             </Button>

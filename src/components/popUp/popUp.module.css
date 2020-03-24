@@ -78,6 +78,18 @@
   margin-bottom: 15px;
 }
 
+.addExtraText {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.extraList {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
 .button {
   margin-top: auto;
 }

@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 92px;
+  box-shadow: rgba(6, 5, 50, 0.1) 0px 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  background: #ffffff;
+  border-radius: 16px;
+  font-size: 12px;
+  padding: 8px;
+  margin-top: 60px;
+}
+
+.container:hover {
+  box-shadow: rgba(6, 5, 50, 0.1) 0px 4px 10px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  margin-top: -55px;;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.text::first-letter {
+  text-transform: uppercase;
+}
