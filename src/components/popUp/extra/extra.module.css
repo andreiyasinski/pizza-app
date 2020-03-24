@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 92px;
+  min-height: 130px;
   box-shadow: rgba(6, 5, 50, 0.1) 0px 10px 20px;
   cursor: pointer;
   text-align: left;
@@ -15,6 +16,7 @@
 
 .container:hover {
   box-shadow: rgba(6, 5, 50, 0.1) 0px 4px 10px;
+  
 }
 
 .image {

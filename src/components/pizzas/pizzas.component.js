@@ -20,6 +20,7 @@ const Pizzas = () => {
   }, [pizzas]);
 
   const getFilteredPizzas = () => {
+    console.log(selectedTypes)
     if (selectedTypes.length === 0) {
       setPizzasList(pizzas)
     } else {
@@ -29,9 +30,9 @@ const Pizzas = () => {
     }
   }
   
-  const handleFilter = (e, id ) => {
+  const handleFilter = (isSelected, id) => {
     const temp = selectedTypes;
-    e.target.checked ? temp.push(id) : temp.splice(temp.indexOf(id), 1);
+    isSelected ? temp.push(id) : temp.splice(temp.indexOf(id), 1);
     setSelectedTypes(temp);
     getFilteredPizzas();
   }

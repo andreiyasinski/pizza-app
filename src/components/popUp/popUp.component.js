@@ -12,13 +12,16 @@ const PopUp = () => {
   const [removed, setRemoved] = useState([]);
   const [size, setSize] = useState("small");
   const [duoghType, setDuoghType] = useState("type1");
+  const [extra, setExtra] = useState([]);
   const pizza = useSelector(state => state.popUp.data);
   
   const dispatch = useDispatch();
   
   const { price, diameter, weight } = pizza.size[size];
   const selectedDoughType = pizza.dough[duoghType];
-  const { extra } = pizza;
+  const extraData = pizza.extra;
+
+  const totalPrice = extra.reduce((sum, current) => +sum + +current.price, +price).toFixed(2);
   
   const closePopUp = (e) => {
     if (e.target === e.currentTarget) {
@@ -28,7 +31,7 @@ const PopUp = () => {
 
   const handleRemoved = (name, isSelected) => {
     const temp = isSelected ? [...removed, name] : removed.filter(v => v !== name);
-    setRemoved([...temp]);
+    setRemoved(temp);
   }
 
   const changeSize = (e) => {
@@ -39,6 +42,11 @@ const PopUp = () => {
 
   const changeDoughType = (e) => {
     setDuoghType(e.target.value);
+  }
+
+  const changeExtra = (isSelected, item) => {
+    const temp = isSelected ? [...extra, item] : extra.filter(v => v.id !== item.id);
+    setExtra(temp);
   }
 
   return (
@@ -81,10 +89,10 @@ const PopUp = () => {
             />
             <h3 className={styles.addExtraText}>Добавить в пиццу</h3>
             <ul className={styles.extraList}>
-              { extra.map( item => <Extra item={item} key={item.id} /> ) }
+              { extraData.map( item => <Extra item={item} key={item.id} onChange={changeExtra} /> ) }
             </ul>
             <Button theme="secondary" className={styles.button}>
-              {`Добавить в корзину за ${price} руб.`}
+              {`Добавить в корзину за ${totalPrice} руб.`}
             </Button>
           </div>
         </div>

@@ -6,8 +6,8 @@ const Ingredient = ({ onChange, item, i, length }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleInput = async () => {
-    setIsChecked(!isChecked)
     onChange(item.name, !isChecked);
+    setIsChecked(!isChecked)
   }
 
   return (

@@ -5,8 +5,8 @@ import styles from './filterItem.module.css';
 const FilterItem = ({ item, onClick }) => {
   const [isChecked, setIsChecked] = useState(false)
 
-  const handleCheckbox = (e, id) => {
-    onClick(e, item.id);
+  const handleCheckbox = () => {
+    onClick(!isChecked, item.id);
     setIsChecked(!isChecked)
   }
 
