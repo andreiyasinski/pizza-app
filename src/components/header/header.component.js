@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import cn from 'classnames';
 import styles from './header.module.css';
 import Logo from '../../ui-kit/logo/logo.component';
-import Basket from '../../ui-kit/basket/basket.component';
+import BasketButton from '../../ui-kit/basketButton/basketButton.component';
 import Phone from '../../ui-kit/phone/phone.component';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu } from '../../actions';
@@ -11,6 +11,7 @@ import { toggleMenu } from '../../actions';
 const Header = () => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((state) => state.menu.isMenuOpen);
+  const number = useSelector((state) => state.basket.length);
 
   const nav = useRef(null);
 
@@ -51,7 +52,9 @@ const Header = () => {
         </div>
         <div className={styles.headerRight}>
           <Phone className={styles.phone} />
-          <Basket />
+          <Link to="/basket" className={styles.basket}>
+            <BasketButton number={number} />
+          </Link>
         </div>
       </div>
       <div

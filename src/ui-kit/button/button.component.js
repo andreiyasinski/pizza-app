@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import styles from './button.module.css';
 
-const Button = ({ theme, children, onClick, className }) => {
+const Button = ({ children, theme, onClick, className }) => {
   const buttonTheme = theme || 'primary';
 
   return (

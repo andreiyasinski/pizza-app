@@ -92,6 +92,7 @@
 
 .button {
   margin-top: auto;
+  width: 100%;
 }
 
 @keyframes popupZoomOut {
@@ -105,5 +106,78 @@
     opacity: 1;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .imageBlock {
+    width: 50%;
+  }
+
+  .description {
+    width: 50%;
+  }
+} 
+
+@media screen and (max-width: 780px) {
+  .imageBlock {
+    width: 45%;
+  }
+
+  .description {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageBlock {
+    width: 100%;
+  }
+
+  .image {
+    width: 50%;
+    padding: 20px 0 0 10px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .extraList {
+    justify-content: space-around;
+  }
+
+  .description {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  .description {
+    padding: 20px 10px;
+  }
+
+  .extraList {
+    justify-content: space-between;
+  }
+
+  .closeIcon {  
+    right: 8px;
+    top: 8px;
+    /* background: #ff8c29;
+    border-radius: 50%; */
+  }
+
+  .svgPath {
+    fill: #a2a2a2;
   }
 }

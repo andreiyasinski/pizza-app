@@ -1,0 +1,45 @@
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.list {
+  background: #fff;
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px 20px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back {
+  background: transparent;
+  color: #000;
+  border: 1px solid #babfd0;
+}
+
+.back:hover {
+  background: transparent;
+  color: #ff6900;
+  border: 1px solid #ff6900;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.total {
+  margin-top: 50px;
+  font-size: 21px;
+  text-align: end;
+}
+
+@media screen and (max-width: 480px) {
+  .back, .button {
+    padding: 17px 17px;
+  }
+}

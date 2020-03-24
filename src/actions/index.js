@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { v4 as id } from 'uuid';
 
 export const GET_PIZZAS_REQUEST = 'GET_PIZZAS_REQUEST';
 export const GET_PIZZAS_SUCCESS = 'GET_PIZZAS_SUCCESS';
@@ -127,3 +128,31 @@ export const getTypes = () => (dispatch) => {
       dispatch(getTypesFailure(err));
     });
 };
+
+export const ADD_TO_BASKET = 'ADD_TO_BASKET';
+export const DELETE_FROM_BASKET = 'DELETE_FROM_BASKET';
+export const CHANGE_NUMBER = 'CHANGE_NUMBER';
+
+export const addToBasket = (item) => ({
+  type: ADD_TO_BASKET,
+  payload: {
+    id: id(),
+    pizza: item,
+    number: 1
+  },
+});
+
+export const deleteFromBasket = (id) => ({
+  type: DELETE_FROM_BASKET,
+  payload: {
+    id
+  }
+});
+
+export const changeNumber = (id, value) => ({
+  type: CHANGE_NUMBER,
+  payload: {
+    id,
+    value
+  }
+});
