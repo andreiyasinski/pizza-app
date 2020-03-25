@@ -4,10 +4,10 @@ import { useDispatch } from 'react-redux';
 import { deleteFromBasket, changeNumber } from '../../../actions';
 
 const BasketItem = ({ item }) => {
-  const { name, image, size, dough, removed, extra, totalPrice } = item.pizza;
+  const { name, image, size, dough, removed, extra, price } = item.pizza;
   const dispatch = useDispatch();
 
-  const totalPizzasPrice = (+totalPrice * item.number).toFixed(2)
+  const totalPizzaPrice = (+price * item.number).toFixed(2)
 
   const deleteItem = (id) => {
     dispatch(deleteFromBasket(id))
@@ -57,7 +57,7 @@ const BasketItem = ({ item }) => {
           </span>
         </div>
         <p className={styles.price}>
-          {`${totalPizzasPrice} руб.`}
+          {`${totalPizzaPrice} руб.`}
         </p>
         <div className={styles.delete} onClick={() => deleteItem(item.id)}>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

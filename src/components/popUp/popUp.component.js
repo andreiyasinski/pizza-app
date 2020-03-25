@@ -59,7 +59,7 @@ const PopUp = () => {
       dough: selectedDoughType,
       removed,
       extra,
-      totalPrice
+      price: totalPrice
     }));
     dispatch(togglePopUp(false, {}));
   }
