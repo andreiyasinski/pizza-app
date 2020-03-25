@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import cn from 'classnames';
 import styles from './ingredient.module.css';
 
-const Ingredient = ({ onChange, item, i, length }) => {
+const Ingredient = ({ onChange, item}) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleInput = async () => {
-    onChange(item.name, !isChecked);
+    onChange(!isChecked, item.name);
     setIsChecked(!isChecked)
   }
 
   return (
-    <li>
+    <li className={styles.listItem}>
       <label className={styles.label}>
         <span
           className={cn(styles.text, {
@@ -48,7 +48,6 @@ const Ingredient = ({ onChange, item, i, length }) => {
           </>
         }
       </label>
-      {length !== i+1 && <span>,&#160;</span>}
     </li> 
   );
 };

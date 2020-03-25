@@ -1,25 +1,25 @@
 import {
-  ADD_TO_BASKET,
-  DELETE_FROM_BASKET,
-  CHANGE_NUMBER
+  BASKET_ADD,
+  BASKET_DELETE,
+  BASKET_CHANGE_AMOUNT
 } from '../actions';
 
 const initialState  = [];
 
 const basket = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_TO_BASKET:
+    case BASKET_ADD:
       return [
         ...state,
         action.payload,
       ];
-    case DELETE_FROM_BASKET:
+    case BASKET_DELETE:
       return state.filter(record => record.id !== action.payload.id);
-    case CHANGE_NUMBER:
+    case BASKET_CHANGE_AMOUNT:
       return state.map(record => (
         record.id === action.payload.id
         ?
-        {...record, number: action.payload.value}
+        {...record, amount: action.payload.value}
         :
         record
       ))

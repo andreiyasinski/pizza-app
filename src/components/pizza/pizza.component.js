@@ -2,12 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import styles from './pizza.module.css';
 import Button from '../../ui-kit/button/button.component';
-import { togglePopUp } from '../../actions';
+import { changeSelectedPizzaState } from '../../actions';
 
 const Pizza = ({ pizza, ingredients }) => {
   const [pizzaIngredientsData, setPizzaIngredientsData] = useState([]);
   const [pizzaExtraData, setPizzaExtraData] = useState([]);
-  const [pizzaIngredientsNames, setPizzaIngredientsNames] = useState('');
   const dispatch = useDispatch();
 
   const getIngredientsData = useCallback((pizzaIngredients) => {
@@ -21,25 +20,15 @@ const Pizza = ({ pizza, ingredients }) => {
       {...ingredients.find(item => item.id === ingredient)}
     ))
   }, [ingredients]);
-
-  const getIngredientsNames = (ingredients) => {
-    return ingredients.map((ingredient) => (
-      ingredient.name
-    )).join(', ');
-  }
   
   useEffect(() => {
     setPizzaIngredientsData(getIngredientsData(pizza.ingredients));
     setPizzaExtraData(getExtraData(pizza.extra));
   }, [pizza, ingredients, getIngredientsData, getExtraData]);
-
-  useEffect(() => {
-    setPizzaIngredientsNames(getIngredientsNames(pizzaIngredientsData));
-  }, [pizzaIngredientsData, pizzaIngredientsNames]);
   
   const openPopUp = () => {
     dispatch(
-      togglePopUp(true, {
+      changeSelectedPizzaState(true, {
         ...pizza,
         ingredients: pizzaIngredientsData,
         extra: pizzaExtraData
@@ -61,7 +50,15 @@ const Pizza = ({ pizza, ingredients }) => {
             {pizza.name}
           </h2>
           <div className={styles.bottom}>
-            <p className={styles.ingredients}>{pizzaIngredientsNames}</p>
+            <div className={styles.ingredients}>
+              <p className={styles.text}>
+                {
+                  pizzaIngredientsData.map((ingredient) => (
+                    ingredient.name
+                  )).join(', ')
+                }
+              </p>
+            </div>
             <div className={styles.controls}>
               <Button
                 theme="primary"

@@ -82,12 +82,12 @@ export const toggleMenu = (isMenuOpen) => ({
   },
 });
 
-export const TOGGLE_POPUP = 'TOGGLE_POPUP';
+export const CHANGE_SELECTED_PIZZA_STATE = 'CHANGE_SELECTED_PIZZA_STATE';
 
-export const togglePopUp = (isPopUpOpen, data) => ({
-  type: TOGGLE_POPUP,
+export const changeSelectedPizzaState = (isOpen, data) => ({
+  type: CHANGE_SELECTED_PIZZA_STATE,
   payload: {
-    isPopUpOpen,
+    isOpen,
     data
   },
 });
@@ -129,28 +129,28 @@ export const getTypes = () => (dispatch) => {
     });
 };
 
-export const ADD_TO_BASKET = 'ADD_TO_BASKET';
-export const DELETE_FROM_BASKET = 'DELETE_FROM_BASKET';
-export const CHANGE_NUMBER = 'CHANGE_NUMBER';
+export const BASKET_ADD = 'BASKET_ADD';
+export const BASKET_DELETE = 'BASKET_DELETE';
+export const BASKET_CHANGE_AMOUNT = 'BASKET_CHANGE_AMOUNT';
 
 export const addToBasket = (item) => ({
-  type: ADD_TO_BASKET,
+  type: BASKET_ADD,
   payload: {
     id: id(),
     pizza: item,
-    number: 1
+    amount: 1
   },
 });
 
 export const deleteFromBasket = (id) => ({
-  type: DELETE_FROM_BASKET,
+  type: BASKET_DELETE,
   payload: {
     id
   }
 });
 
-export const changeNumber = (id, value) => ({
-  type: CHANGE_NUMBER,
+export const changeAmountInBasket = (id, value) => ({
+  type: BASKET_CHANGE_AMOUNT,
   payload: {
     id,
     value

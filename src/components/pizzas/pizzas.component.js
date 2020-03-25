@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import styles from './pizzas.module.css';
 import Pizza from '../pizza/pizza.component';
-import Popup from '../popUp/popUp.component';
+import SelectedPizza from '../selectedPizza/selectedPizza.component';
 import Filter from '../filter/filter.component';
 
 const Pizzas = () => {
@@ -13,14 +13,13 @@ const Pizzas = () => {
   const pizzas = useSelector((state) => state.pizzas.items);
   const ingredients = useSelector((state) => state.ingredients.items);
   const types = useSelector((state) => state.types.items);
-  const isPopUpOpen = useSelector((state) => state.popUp.isPopUpOpen);
+  const isOpen = useSelector((state) => state.selectedPizza.isOpen);
 
   useEffect(() => {
     setPizzasList(pizzas)
   }, [pizzas]);
 
   const getFilteredPizzas = () => {
-    console.log(selectedTypes)
     if (selectedTypes.length === 0) {
       setPizzasList(pizzas)
     } else {
@@ -30,16 +29,16 @@ const Pizzas = () => {
     }
   }
   
-  const handleFilter = (isSelected, id) => {
-    const temp = selectedTypes;
-    isSelected ? temp.push(id) : temp.splice(temp.indexOf(id), 1);
-    setSelectedTypes(temp);
+  const changeFilter = (isSelected, id) => {
+    const newSelectedTypes = selectedTypes;
+    isSelected ? newSelectedTypes.push(id) : newSelectedTypes.splice(newSelectedTypes.indexOf(id), 1);
+    setSelectedTypes(newSelectedTypes);
     getFilteredPizzas();
   }
 
   return (
     <>
-      <Filter onClick={handleFilter} pizzaTypes={types} />
+      <Filter onClick={changeFilter} pizzaTypes={types} />
       <ul className={styles.container}>
         { pizzasList.map((pizza) => (
             <Pizza
@@ -50,7 +49,7 @@ const Pizzas = () => {
           ))
         }
       </ul>
-      { isPopUpOpen &&  <Popup /> }
+      { isOpen &&  <SelectedPizza /> }
     </>
   );
 };

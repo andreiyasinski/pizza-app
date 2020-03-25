@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import styles from './popUp.module.css';
+import styles from './selectedPizza.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { togglePopUp, addToBasket } from '../../actions';
+import { PIZZA_SIZE, PIZZA_DOUGH } from '../../models/models';
+import { changeSelectedPizzaState, addToBasket } from '../../actions';
 import Ingredient from './ingredient/ingredient.component';
 import Button from '../../ui-kit/button/button.component';
 import SizeSelector from './sizeSelector/sizeSelector.component';
 import DoughSelector from './doughSelector/doughSelector.component';
 import Extra from './extra/extra.component';
 
-const PopUp = () => {
-  const [removed, setRemoved] = useState([]);
-  const [size, setSize] = useState("small");
-  const [duoghType, setDuoghType] = useState("type1");
+const SelectedPizza = () => {
+  const [removedIngredients, setRemovedIngredients] = useState([]);
+  const [size, setSize] = useState(PIZZA_SIZE.SMALL);
+  const [duoghType, setDuoghType] = useState(PIZZA_DOUGH.TYPE1);
   const [extra, setExtra] = useState([]);
-  const pizza = useSelector(state => state.popUp.data);
+  const pizza = useSelector(state => state.selectedPizza.data);
   
   const dispatch = useDispatch();
   
@@ -26,17 +27,17 @@ const PopUp = () => {
   
   const closePopUp = (e) => {
     if (e.target === e.currentTarget) {
-      dispatch(togglePopUp(false, {}));
+      dispatch(changeSelectedPizzaState(false, {}));
     }
   }
 
-  const handleRemoved = (name, isSelected) => {
-    const temp = isSelected ? [...removed, name] : removed.filter(v => v !== name);
-    setRemoved(temp);
+  const changeRemovedIngredients = (isSelected, name) => {
+    const newRemoved = isSelected ? [...removedIngredients, name] : removedIngredients.filter(v => v !== name);
+    setRemovedIngredients(newRemoved);
   }
 
   const changeSize = (e) => {
-    let temp = e.target.value === "small" ? "type1" : duoghType;
+    let temp = e.target.value === PIZZA_SIZE.SMALL ? PIZZA_DOUGH.TYPE1 : duoghType;
     setSize(e.target.value);
     setDuoghType(temp);
   }
@@ -46,8 +47,8 @@ const PopUp = () => {
   }
 
   const changeExtra = (isSelected, item) => {
-    const temp = isSelected ? [...extra, item] : extra.filter(v => v.id !== item.id);
-    setExtra(temp);
+    const newExtra = isSelected ? [...extra, item] : extra.filter(v => v.id !== item.id);
+    setExtra(newExtra);
   }
 
   const addPizzaToBasket = () => {
@@ -57,11 +58,11 @@ const PopUp = () => {
       image,
       size: pizza.size[size],
       dough: selectedDoughType,
-      removed,
+      removed: removedIngredients,
       extra,
       price: totalPrice
     }));
-    dispatch(togglePopUp(false, {}));
+    dispatch(changeSelectedPizzaState(false, {}));
   }
 
   return (
@@ -84,11 +85,9 @@ const PopUp = () => {
               {
                 pizza.ingredients.map( (item, i) => (
                   <Ingredient
-                    onChange={handleRemoved}
+                    onChange={changeRemovedIngredients}
                     key={item.id}
                     item={item}
-                    i={i}
-                    length={pizza.ingredients.length}
                   />
                 ))
               }
@@ -111,7 +110,7 @@ const PopUp = () => {
             </Button>
           </div>
         </div>
-        <svg onClick={() => dispatch(togglePopUp(false, {}))} className={styles.closeIcon} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg onClick={() => dispatch(changeSelectedPizzaState(false, {}))} className={styles.closeIcon} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path className={styles.svgPath} fillRule="evenodd" clipRule="evenodd" d="M9.84606 12.4986L0.552631 3.20519C-0.1806 2.47196 -0.1806 1.28315 0.552631 0.549923C1.28586 -0.183308 2.47466 -0.183308 3.20789 0.549923L12.5013 9.84335L21.792 0.552631C22.5253 -0.1806 23.7141 -0.1806 24.4473 0.552631C25.1805 1.28586 25.1805 2.47466 24.4473 3.20789L15.1566 12.4986L24.45 21.792C25.1832 22.5253 25.1832 23.7141 24.45 24.4473C23.7168 25.1805 22.528 25.1805 21.7947 24.4473L12.5013 15.1539L3.20519 24.45C2.47196 25.1832 1.28315 25.1832 0.549923 24.45C-0.183308 23.7168 -0.183308 22.528 0.549923 21.7947L9.84606 12.4986Z" fill="white"></path>
         </svg>
       </div>
@@ -119,4 +118,4 @@ const PopUp = () => {
   );
 };
 
-export default PopUp;
+export default SelectedPizza;

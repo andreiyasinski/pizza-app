@@ -1,31 +1,31 @@
 import React from 'react';
 import styles from './basketItem.module.css';
 import { useDispatch } from 'react-redux';
-import { deleteFromBasket, changeNumber } from '../../../actions';
+import { deleteFromBasket, changeAmountInBasket } from '../../../actions';
 
 const BasketItem = ({ item }) => {
   const { name, image, size, dough, removed, extra, price } = item.pizza;
   const dispatch = useDispatch();
 
-  const totalPizzaPrice = (+price * item.number).toFixed(2)
+  const totalPizzaPrice = (+price * item.amount).toFixed(2)
 
   const deleteItem = (id) => {
     dispatch(deleteFromBasket(id))
   }
 
-  const increaseNumber = (id) => {
-    const newNumber = item.number + 1;
-    dispatch(changeNumber(id, newNumber))
+  const increaseAmount = (id) => {
+    const newAmount = item.amount + 1;
+    dispatch(changeAmountInBasket(id, newAmount))
   }
 
-  const decreaseNumber = (id) => {
-    const newNumber = item.number - 1;
-    item.number > 1 ? dispatch(changeNumber(id, newNumber)) : dispatch(deleteFromBasket(id));
+  const decreaseAmount = (id) => {
+    const newAmount = item.amount - 1;
+    item.amount > 1 ? dispatch(changeAmountInBasket(id, newAmount)) : dispatch(deleteFromBasket(id));
   }
 
   return (
     <li className={styles.container}>
-      <div className={styles.right}>
+      <div className={styles.info}>
         <img className={styles.image} src={image} alt={name} />
         <div className={styles.description}>
           <h2 className={styles.name}>{name}</h2>
@@ -40,18 +40,18 @@ const BasketItem = ({ item }) => {
           }
         </div>
       </div>
-      <div className={styles.left}>
+      <div className={styles.actions}>
         <div className={styles.amount}>
           <span
             className={styles.count}
-            onClick={() => decreaseNumber(item.id)}
+            onClick={() => decreaseAmount(item.id)}
           >
             -
           </span>
-          {item.number}
+          {item.amount}
           <span
             className={styles.count}
-            onClick={() => increaseNumber(item.id)}
+            onClick={() => increaseAmount(item.id)}
           >
             +
           </span>

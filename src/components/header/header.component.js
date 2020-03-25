@@ -11,7 +11,7 @@ import { toggleMenu } from '../../actions';
 const Header = () => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((state) => state.menu.isMenuOpen);
-  const number = useSelector((state) => state.basket.length);
+  const amount = useSelector((state) => state.basket.length);
 
   const nav = useRef(null);
 
@@ -53,7 +53,7 @@ const Header = () => {
         <div className={styles.headerRight}>
           <Phone className={styles.phone} />
           <Link to="/basket" className={styles.basket}>
-            <BasketButton number={number} />
+            <BasketButton amount={amount} />
           </Link>
         </div>
       </div>

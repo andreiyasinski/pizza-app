@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Basket = () => {
   const basket = useSelector(state => state.basket);
   const totalOrderPrice = basket.reduce((sum, current) => (
-    sum + +current.pizza.price * current.number
+    sum + +current.pizza.price * current.amount
   ), 0).toFixed(2);
 
   return (
