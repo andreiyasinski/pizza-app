@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "270d5d243e19ab9d7303ad26bbc18bc3",
+    "revision": "2db8ba1fac9541ee63ce300dd0176a57",
     "url": "/pizza-app/index.html"
   },
   {
-    "revision": "5756a432aefee81e1cbb",
-    "url": "/pizza-app/static/css/main.6ea8dd20.chunk.css"
+    "revision": "2e6dcd15fe59c34b7b6e",
+    "url": "/pizza-app/static/css/main.5d3c7f8c.chunk.css"
   },
   {
     "revision": "0a86e965e4c19ad1c3e6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pizza-app/static/js/2.70d6ccb1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5756a432aefee81e1cbb",
-    "url": "/pizza-app/static/js/main.4def0337.chunk.js"
+    "revision": "2e6dcd15fe59c34b7b6e",
+    "url": "/pizza-app/static/js/main.81a9902e.chunk.js"
   },
   {
     "revision": "48b61f0f63c0fbbe2941",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pizza-app/static/media/banner.5cc5f95b.jpg"
   },
   {
-    "revision": "784e171101008e8809bdd42d5d848a37",
-    "url": "/pizza-app/static/media/logo.784e1711.png"
+    "revision": "ff3934c16991c0342b4a906fa70c37a5",
+    "url": "/pizza-app/static/media/logo4.ff3934c1.png"
   }
 ]);
