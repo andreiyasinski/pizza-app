@@ -1,8 +1,11 @@
 .container {
   min-height: 220px;
-  background: 
+  /* background: 
     linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-    url(../../assets/banner.jpg) center no-repeat;
+    url(../../assets/banner.jpg) center no-repeat; */
+    background: 
+      linear-gradient(rgba(255, 204, 141, 0.2), rgba(113, 52, 0, 0.2)),
+      url(../../assets/banner.jpg) center no-repeat;
   background-size: cover;
   margin-bottom: 50px;
   display: flex;

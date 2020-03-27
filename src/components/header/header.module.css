@@ -25,6 +25,7 @@
 .list {
   display: flex;
   list-style: none;
+  text-transform: uppercase
 }
 
 .link {

@@ -1,5 +1,6 @@
 .container {
-  background: #f6f5f0;
+  /* background: #f6f5f0; */
+  background: #fff8ef;
 }
 
 .main {
@@ -24,5 +25,6 @@
 }
 
 .footerBlock {
-  background-color: #e2e0d8;
+  /* background-color: #e2e0d8; */
+  background-color: #ffe7c6;
 }

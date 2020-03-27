@@ -25,8 +25,12 @@
 
 .back:hover {
   background: transparent;
-  color: #ff6900;
-  border: 1px solid #ff6900;
+  color: #ff4756;
+  border: 1px solid #ff4756;
+}
+
+.back::before {
+  background: transparent;
 }
 
 .link {
