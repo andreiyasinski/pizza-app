@@ -58,7 +58,7 @@
   padding: 30px 20px;
   background-color: #fcfcfc;
   background: 
-    linear-gradient(90deg, rgba(148, 148, 148, 0.14),rgba(0, 0, 0, 0) 5%, #fcfcfc);
+    linear-gradient(90deg, rgba(148, 148, 148, 0.14),#fcfcfc 5%, #fcfcfc);
 }
 
 .title {
@@ -167,7 +167,7 @@
   .description {
     width: 100%;
     background: 
-      linear-gradient(180deg, rgba(148, 148, 148, 0.14),rgba(0, 0, 0, 0) 5%, #fcfcfc);
+      linear-gradient(180deg, rgba(148, 148, 148, 0.14),#fcfcfc 5%, #fcfcfc);
   }
 
   .extraList {
