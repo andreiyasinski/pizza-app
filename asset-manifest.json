@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pizza-app/static/css/main.f13d2d3e.chunk.css",
+    "main.css": "/pizza-app/static/css/main.13270ca4.chunk.css",
     "main.js": "/pizza-app/static/js/main.81a9902e.chunk.js",
     "main.js.map": "/pizza-app/static/js/main.81a9902e.chunk.js.map",
     "runtime-main.js": "/pizza-app/static/js/runtime-main.a294e444.js",
@@ -8,9 +8,9 @@
     "static/js/2.70d6ccb1.chunk.js": "/pizza-app/static/js/2.70d6ccb1.chunk.js",
     "static/js/2.70d6ccb1.chunk.js.map": "/pizza-app/static/js/2.70d6ccb1.chunk.js.map",
     "index.html": "/pizza-app/index.html",
-    "precache-manifest.697b004f9acb845e742dbc547386e522.js": "/pizza-app/precache-manifest.697b004f9acb845e742dbc547386e522.js",
+    "precache-manifest.8e3bee1c0e423ee16d131967378b6edf.js": "/pizza-app/precache-manifest.8e3bee1c0e423ee16d131967378b6edf.js",
     "service-worker.js": "/pizza-app/service-worker.js",
-    "static/css/main.f13d2d3e.chunk.css.map": "/pizza-app/static/css/main.f13d2d3e.chunk.css.map",
+    "static/css/main.13270ca4.chunk.css.map": "/pizza-app/static/css/main.13270ca4.chunk.css.map",
     "static/js/2.70d6ccb1.chunk.js.LICENSE.txt": "/pizza-app/static/js/2.70d6ccb1.chunk.js.LICENSE.txt",
     "static/media/bunner.module.css": "/pizza-app/static/media/banner.5cc5f95b.jpg",
     "static/media/logo4.png": "/pizza-app/static/media/logo4.ff3934c1.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.a294e444.js",
     "static/js/2.70d6ccb1.chunk.js",
-    "static/css/main.f13d2d3e.chunk.css",
+    "static/css/main.13270ca4.chunk.css",
     "static/js/main.81a9902e.chunk.js"
   ]
 }
