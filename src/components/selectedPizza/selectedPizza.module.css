@@ -130,13 +130,26 @@
 }
 
 @media screen and (max-width: 710px) {
+  .container {
+    margin-top: 150px;
+  }
+
   .card {
     flex-direction: column;
     align-items: center;
   }
 
+  .svgPath {
+    fill: #a2a2a2;
+  }
+
   .imageBlock {
     width: 100%;
+  }
+
+  .closeIcon {  
+    right: 8px;
+    top: 8px;
   }
 
   .image {
@@ -158,26 +171,19 @@
 }
 
 @media screen and (max-width: 480px) {
-  .wrapper {
-    padding: 45px 10px;
+  .container {
+    margin-top: 120px;
   }
 
+  .wrapper {
+    padding: 10px;
+  }
+  
   .description {
     padding: 20px 10px;
   }
 
   .extraList {
     justify-content: space-between;
-  }
-
-  .closeIcon {  
-    right: 8px;
-    top: 8px;
-    /* background: #ff8c29;
-    border-radius: 50%; */
-  }
-
-  .svgPath {
-    fill: #a2a2a2;
   }
 }
