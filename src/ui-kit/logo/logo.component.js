@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './logo.module.css';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 
 const Logo = ({ className }) => {
@@ -10,7 +11,7 @@ const Logo = ({ className }) => {
       to="/"
       className={cn(styles.container, className)}
     >
-      PIZZA DELIVERY
+      <img className={styles.image} src={logo} alt="logo" />
     </Link>
   );
 };

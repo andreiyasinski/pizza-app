@@ -15,9 +15,9 @@
 }
 
 .primary {
-  background-color: #E2E0D8;
-  color: #817E71;
+  color: #fff;
   border-radius: 24px;
+  background: #ff6900;
 }
 
 .secondary {

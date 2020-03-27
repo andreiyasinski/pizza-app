@@ -1,4 +1,4 @@
-.container {
+/* .container {
   line-height: 1;
   border: 2px solid #f90;
   background: linear-gradient(45deg, #f90, transparent);
@@ -7,4 +7,11 @@
   text-decoration: none;
   font-weight: 600;
   color: #1E1C22;
+} */
+
+.image {
+  height: 70px;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.39);
 }
