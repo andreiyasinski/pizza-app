@@ -28,7 +28,7 @@
     },
     "extra": [7, 3, 13],
     "type": [4],
-    "image": "pizza-app/images/image-1.jpg",
+    "image": "/pizza-app/images/image-1.jpg",
     "ingredients": [
       {
         "id": 23,
@@ -93,7 +93,7 @@
     },
     "extra": [13, 18, 25],
     "type": [2],
-    "image": "pizza-app/images/image-2.jpeg",
+    "image": "/pizza-app/images/image-2.jpeg",
     "ingredients": [
       {
         "id": 1,
@@ -142,7 +142,7 @@
     },
     "extra": [13, 7, 18],
     "type": [2],
-    "image": "pizza-app/images/image-3.jpeg",
+    "image": "/pizza-app/images/image-3.jpeg",
     "ingredients": [
       {
         "id": 5,
@@ -191,7 +191,7 @@
     },
     "extra": [25, 10, 7],
     "type": [2],
-    "image": "pizza-app/images/image-4.jpg",
+    "image": "/pizza-app/images/image-4.jpg",
     "ingredients": [
       {
         "id": 4,
@@ -240,7 +240,7 @@
     },
     "extra": [25, 10, 7],
     "type": [2],
-    "image": "pizza-app/images/image-5.jpg",
+    "image": "/pizza-app/images/image-5.jpg",
     "ingredients": [
       {
         "id": 8,
@@ -285,7 +285,7 @@
     },
     "extra": [3, 10, 6],
     "type": [4],
-    "image": "pizza-app/images/image-6.jpg",
+    "image": "/pizza-app/images/image-6.jpg",
     "ingredients": [
       {
         "id": 9,
@@ -334,7 +334,7 @@
     },
     "extra": [3, 12, 13],
     "type": [4],
-    "image": "pizza-app/images/image-7.jpg",
+    "image": "/pizza-app/images/image-7.jpg",
     "ingredients": [
       {
         "id": 11,
@@ -383,7 +383,7 @@
     },
     "extra": [3, 13, 18],
     "type": [2],
-    "image": "pizza-app/images/image-8.jpg",
+    "image": "/pizza-app/images/image-8.jpg",
     "ingredients": [
       {
         "id": 14,
@@ -440,7 +440,7 @@
     },
     "extra": [3, 13, 7],
     "type": [2, 4],
-    "image": "pizza-app/images/image-9.jpg",
+    "image": "/pizza-app/images/image-9.jpg",
     "ingredients": [
       {
         "id": 19,
@@ -497,7 +497,7 @@
     },
     "extra": [3, 13, 12],
     "type": [1, 5],
-    "image": "pizza-app/images/image-10.jpg",
+    "image": "/pizza-app/images/image-10.jpg",
     "ingredients": [
       {
         "id": 20,
@@ -550,7 +550,7 @@
     },
     "extra": [13, 22, 7],
     "type": [2],
-    "image": "pizza-app/images/image-11.jpg",
+    "image": "/pizza-app/images/image-11.jpg",
     "ingredients": [
       {
         "id": 4,
@@ -599,7 +599,7 @@
     },
     "extra": [3, 10, 6],
     "type": [2, 3],
-    "image": "pizza-app/images/image-12.jpg",
+    "image": "/pizza-app/images/image-12.jpg",
     "ingredients": [
       {
         "id": 23,
@@ -660,7 +660,7 @@
     },
     "extra": [13, 7, 18],
     "type": [2, 4],
-    "image": "pizza-app/images/image-13.jpg",
+    "image": "/pizza-app/images/image-13.jpg",
     "ingredients": [
       {
         "id": 24,
@@ -729,7 +729,7 @@
     },
     "extra": [3, 13, 18],
     "type": [2],
-    "image": "pizza-app/images/image-14.jpg",
+    "image": "/pizza-app/images/image-14.jpg",
     "ingredients": [
       {
         "id": 4,
@@ -790,7 +790,7 @@
     },
     "extra": [13, 7, 18],
     "type": [2, 3],
-    "image": "pizza-app/images/image-15.jpg",
+    "image": "/pizza-app/images/image-15.jpg",
     "ingredients": [
       {
         "id": 23,
@@ -847,7 +847,7 @@
     },
     "extra": [3, 13, 7],
     "type": [4],
-    "image": "pizza-app/images/image-16.jpg",
+    "image": "/pizza-app/images/image-16.jpg",
     "ingredients": [
       {
         "id": 27,
@@ -904,7 +904,7 @@
     },
     "extra": [25, 10, 7],
     "type": [4],
-    "image": "pizza-app/images/image-17.jpg",
+    "image": "/pizza-app/images/image-17.jpg",
     "ingredients": [
       {
         "id": 34,
@@ -953,7 +953,7 @@
     },
     "extra": [3, 13, 7],
     "type": [4],
-    "image": "pizza-app/images/image-18.jpg",
+    "image": "/pizza-app/images/image-18.jpg",
     "ingredients": [
       {
         "id": 10,
@@ -1010,7 +1010,7 @@
     },
     "extra": [13, 7, 18],
     "type": [2],
-    "image": "pizza-app/images/image-19.jpg",
+    "image": "/pizza-app/images/image-19.jpg",
     "ingredients": [
       {
         "id": 29,
@@ -1067,7 +1067,7 @@
     },
     "extra": [3, 13, 7],
     "type": [3, 4],
-    "image": "pizza-app/images/image-20.jpg",
+    "image": "/pizza-app/images/image-20.jpg",
     "ingredients": [
       {
         "id": 13,
@@ -1132,7 +1132,7 @@
     },
     "extra": [3, 13, 7],
     "type": [1],
-    "image": "pizza-app/images/image-21.jpg",
+    "image": "/pizza-app/images/image-21.jpg",
     "ingredients": [
       {
         "id": 29,
@@ -1201,7 +1201,7 @@
     },
     "extra": [13, 7, 18],
     "type": [2],
-    "image": "pizza-app/images/image-22.jpg",
+    "image": "/pizza-app/images/image-22.jpg",
     "ingredients": [
       {
         "id": 4,
@@ -1246,7 +1246,7 @@
     },
     "extra": [3, 13, 18],
     "type": [2],
-    "image": "pizza-app/images/image-23.jpg",
+    "image": "/pizza-app/images/image-23.jpg",
     "ingredients": [
       {
         "id": 29,
@@ -1311,7 +1311,7 @@
     },
     "extra": [3, 10, 6],
     "type": [1],
-    "image": "pizza-app/images/image-24.jpg",
+    "image": "/pizza-app/images/image-24.jpg",
     "ingredients": [
       {
         "id": 8,
@@ -1360,7 +1360,7 @@
     },
     "extra": [13, 7, 18],
     "type": [1],
-    "image": "pizza-app/images/image-25.jpg",
+    "image": "/pizza-app/images/image-25.jpg",
     "ingredients": [
       {
         "id": 29,
@@ -1409,7 +1409,7 @@
     },
     "extra": [3, 13, 7],
     "type": [2],
-    "image": "pizza-app/images/image-26.jpeg",
+    "image": "/pizza-app/images/image-26.jpeg",
     "ingredients": [
       {
         "id": 5,
@@ -1458,7 +1458,7 @@
     },
     "extra": [13, 7, 18],
     "type": [1],
-    "image": "pizza-app/images/image-27.jpg",
+    "image": "/pizza-app/images/image-27.jpg",
     "ingredients": [
       {
         "id": 4,
