@@ -172,10 +172,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    margin-top: 120px;
-  }
-
   .wrapper {
     padding: 10px;
   }
