@@ -24,7 +24,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL} >
       <div className={styles.container}>
         <div className={styles.headerBlock}>
           <div className={styles.wrapper}>

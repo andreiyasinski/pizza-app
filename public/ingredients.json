@@ -14,7 +14,7 @@
   {
     "id": 3,
     "name": "моцарелла",
-    "image": "images/extra-3.png",
+    "image": "pizza-app/images/extra-3.png",
     "price": "2.40"
   },
   {
@@ -32,13 +32,13 @@
   {
     "id": 6,
     "name": "ветчина",
-    "image": "images/extra-6.png",
+    "image": "pizza-app/images/extra-6.png",
     "price": "2.40"
   },
   {
     "id": 7,
     "name": "шампиньоны",
-    "image": "images/extra-7.png",
+    "image": "pizza-app/images/extra-7.png",
     "price": "1.80"
   },
   {
@@ -56,7 +56,7 @@
   {
     "id": 10,
     "name": "цыпленок",
-    "image": "images/extra-10.png",
+    "image": "pizza-app/images/extra-10.png",
     "price": "2.40"
   },
   {
@@ -68,13 +68,13 @@
   {
     "id": 12,
     "name": "сладкий перец",
-    "image": "images/extra-12.png",
+    "image": "pizza-app/images/extra-12.png",
     "price": "1.80"
   },
   {
     "id": 13,
     "name": "халапенью",
-    "image": "images/extra-13.png",
+    "image": "pizza-app/images/extra-13.png",
     "price": "1.80"
   },
   {
@@ -92,7 +92,7 @@
   {
     "id": 16,
     "name": "соленые огурчики",
-    "image": "images/extra-16.png",
+    "image": "pizza-app/images/extra-16.png",
     "price": "1.80"
   },
   {
@@ -104,7 +104,7 @@
   {
     "id": 18,
     "name": "бекон",
-    "image": "images/extra-18.png",
+    "image": "pizza-app/images/extra-18.png",
     "price": "2.80"
   },
   {
@@ -128,13 +128,13 @@
   {
     "id": 22,
     "name": "сыр блю чиз",
-    "image": "images/extra-22.png",
+    "image": "pizza-app/images/extra-22.png",
     "price": "2.40"
   },
   {
     "id": 23,
     "name": "острая чоризо",
-    "image": "images/extra-23.png",
+    "image": "pizza-app/images/extra-23.png",
     "price": "2.40"
   },
   {
@@ -146,7 +146,7 @@
   {
     "id": 25,
     "name": "смесь сыров чеддар и пармезан",
-    "image": "images/extra-25.png",
+    "image": "pizza-app/images/extra-25.png",
     "price": "2.40"
   },
   {
@@ -182,7 +182,7 @@
   {
     "id": 31,
     "name": "кубики брынзы",
-    "image": "images/extra-31.png",
+    "image": "pizza-app/images/extra-31.png",
     "price": "2.40"
   },
   {

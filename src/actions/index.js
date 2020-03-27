@@ -28,7 +28,7 @@ export const getPizzasFailure = (error) => ({
 export const getPizzas = () => (dispatch) => {
   dispatch(getPizzasRequest());
 
-  return axios('/pizzas.json')
+  return axios(`${process.env.PUBLIC_URL}/pizzas.json`)
     .then((response) => {
       dispatch(getPizzasSuccess(response.data));
     })
@@ -64,7 +64,7 @@ export const getIngredientsFailure = (error) => ({
 export const getIngredients = () => (dispatch) => {
   dispatch(getIngredientsRequest());
 
-  return axios('/ingredients.json')
+  return axios(`${process.env.PUBLIC_URL}/ingredients.json`)
     .then((response) => {
       dispatch(getIngredientsSuccess(response.data));
     })
@@ -120,7 +120,7 @@ export const getTypesFailure = (error) => ({
 export const getTypes = () => (dispatch) => {
   dispatch(getTypesRequest());
 
-  return axios('/types.json')
+  return axios(`${process.env.PUBLIC_URL}/types.json`)
     .then((response) => {
       dispatch(getTypesSuccess(response.data));
     })
