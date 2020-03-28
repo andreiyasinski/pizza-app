@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6089816c708a5432a75ade1bb23ed01b",
+    "revision": "aa6164df15378878c815cba7a9925cf0",
     "url": "/pizza-app/index.html"
   },
   {
-    "revision": "4694aee56283bc14964a",
-    "url": "/pizza-app/static/css/main.13270ca4.chunk.css"
+    "revision": "06125c94902796fac4b4",
+    "url": "/pizza-app/static/css/main.2bafc67e.chunk.css"
   },
   {
-    "revision": "0a86e965e4c19ad1c3e6",
-    "url": "/pizza-app/static/js/2.70d6ccb1.chunk.js"
+    "revision": "b5ab44c2d6768f8561b1",
+    "url": "/pizza-app/static/js/2.d2d1ddec.chunk.js"
   },
   {
     "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/pizza-app/static/js/2.70d6ccb1.chunk.js.LICENSE.txt"
+    "url": "/pizza-app/static/js/2.d2d1ddec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4694aee56283bc14964a",
-    "url": "/pizza-app/static/js/main.81a9902e.chunk.js"
+    "revision": "06125c94902796fac4b4",
+    "url": "/pizza-app/static/js/main.5d37a65c.chunk.js"
   },
   {
     "revision": "48b61f0f63c0fbbe2941",
