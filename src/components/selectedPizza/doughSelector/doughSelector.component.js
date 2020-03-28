@@ -1,12 +1,28 @@
 import React from 'react';
 import cn from 'classnames';
 import styles from './doughSelector.module.css';
+import { useSelector } from 'react-redux';
+
+const text = {
+  ru: {
+    traditional: "Традиционное",
+    thin: "Тонкое"
+  },
+  en: {
+    traditional: "Traditional",
+    thin: "Thin"
+  }
+}
 
 const DoughSelector = ({ changeDoughType, duoghType, size }) => {
+  const language = useSelector(state => state.language.value);
+
   return (
     <div className={styles.container}>
       <label className={styles.label}>
-        <span className={styles.name}>Традиционное</span>
+        <span className={styles.name}>
+          {text[language].traditional}
+        </span>
         <input
           onChange={changeDoughType}
           className={styles.radio}
@@ -18,7 +34,9 @@ const DoughSelector = ({ changeDoughType, duoghType, size }) => {
       <label className={styles.label}>
         <span className={cn(styles.name, {
           [styles.disabled]:  size === "small"
-        })}>Тонкое</span>
+        })}>
+          {text[language].thin}
+        </span>
         <input
           onChange={changeDoughType}
           className={styles.radio}

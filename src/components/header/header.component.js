@@ -6,12 +6,30 @@ import Logo from '../../ui-kit/logo/logo.component';
 import BasketButton from '../../ui-kit/basketButton/basketButton.component';
 import Phone from '../../ui-kit/phone/phone.component';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleMenu } from '../../actions';
+import { toggleMenu, changeLanguage } from '../../actions';
+
+const text = {
+  ru: {
+    menu: "Меню",
+    promotions: "Акции",
+    cashback: "Кэшбэк",
+    about: "О нас",
+    delivery: "Доставка"
+  },
+  en: {
+    menu: "Menu",
+    promotions: "Promotions",
+    cashback: "Cashback",
+    about: "About",
+    delivery: "Delivery"
+  }
+}
 
 const Header = () => {
   const dispatch = useDispatch();
-  const isMenuOpen = useSelector((state) => state.menu.isMenuOpen);
-  const amount = useSelector((state) => state.basket.length);
+  const isMenuOpen = useSelector(state => state.menu.isMenuOpen);
+  const amount = useSelector(state => state.basket.length);
+  const language = useSelector(state => state.language.value);
 
   const nav = useRef(null);
 
@@ -19,11 +37,11 @@ const Header = () => {
     if (e.target === e.currentTarget) {
       dispatch(toggleMenu(!isMenuOpen));
     }
-  }
+  };
 
   const closeMenu = () => {
-    dispatch(toggleMenu(false))
-  }
+    dispatch(toggleMenu(false));
+  };
 
   return (
     <div className={styles.container}>
@@ -42,15 +60,52 @@ const Header = () => {
           ref={nav}
           >
             <ul className={styles.list}>
-              <li><NavLink onClick={closeMenu} to="/" exact className={styles.link} >Меню</NavLink></li>
-              <li><NavLink onClick={closeMenu} to="/" exact className={styles.link}>Акции</NavLink></li>
-              <li><NavLink onClick={closeMenu} to="/" exact className={styles.link}>Кэшбэк</NavLink></li>
-              <li><NavLink onClick={closeMenu} to="/about" className={styles.link}>О нас</NavLink></li>
-              <li><NavLink onClick={closeMenu}  to="/" exact className={styles.link}>Доставка</NavLink></li>
+              <li>
+                <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
+                  {text[language].menu}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
+                  {text[language].promotions}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
+                  {text[language].cashback}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={closeMenu} to="/about" className={styles.link}>
+                  {text[language].about}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={closeMenu}  to="/" exact className={styles.link}>
+                  {text[language].delivery}
+                </NavLink>
+              </li>
             </ul>
           </nav>
         </div>
         <div className={styles.headerRight}>
+          <div className={styles.selectWrapper}>
+            <span>{language.toUpperCase()}</span>
+            <ul className={styles.languages}>
+              <li
+                onClick={() => dispatch(changeLanguage("en"))}
+                className={styles.language}
+              >
+                EN
+              </li>
+              <li
+                onClick={() => dispatch(changeLanguage("ru"))}
+                className={styles.language}
+              >
+                RU
+              </li>
+            </ul>
+          </div>
           <Phone className={styles.phone} />
           <Link to="/basket" className={styles.basket}>
             <BasketButton amount={amount} />

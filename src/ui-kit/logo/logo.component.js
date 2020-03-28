@@ -9,9 +9,9 @@ const Logo = ({ className }) => {
   return (
     <Link
       to="/"
-      className={cn(styles.container, className)}
+      className={styles.container}
     >
-      <img className={styles.image} src={logo} alt="logo" />
+      <img className={cn(styles.image, className)} src={logo} alt="logo" />
     </Link>
   );
 };

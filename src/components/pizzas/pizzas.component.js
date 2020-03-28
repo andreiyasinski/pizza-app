@@ -9,11 +9,11 @@ const Pizzas = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [pizzasList, setPizzasList] = useState([]);
 
-
-  const pizzas = useSelector((state) => state.pizzas.items);
-  const ingredients = useSelector((state) => state.ingredients.items);
-  const types = useSelector((state) => state.types.items);
-  const isOpen = useSelector((state) => state.selectedPizza.isOpen);
+  const language = useSelector(state => state.language.value)
+  const pizzas = useSelector(state => state.pizzas.items[language]);
+  const ingredients = useSelector(state => state.ingredients.items[language]);
+  const types = useSelector(state => state.types.items[language]);
+  const isOpen = useSelector(state => state.selectedPizza.isOpen);
 
   useEffect(() => {
     setPizzasList(pizzas)

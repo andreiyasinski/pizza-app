@@ -5,6 +5,10 @@
   padding: 34px 0;
 }
 
+.logo {
+  height: 70px;
+}
+
 .footerLeft {
   width: 25%;
 }

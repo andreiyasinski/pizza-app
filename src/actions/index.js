@@ -156,3 +156,12 @@ export const changeAmountInBasket = (id, value) => ({
     value
   }
 });
+
+export const LANGUAGE_CHANGE = 'LANGUAGE_CHANGE';
+
+export const changeLanguage = (value) => ({
+  type: LANGUAGE_CHANGE,
+  payload: {
+    value
+  }
+});

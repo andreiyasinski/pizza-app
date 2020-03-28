@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.logo {
+  height: 70px;
+}
+
 .link {
   display: block;
   text-decoration: none;
@@ -41,8 +45,8 @@
 }
 
 .phone {
-  margin-right: 15px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 15px;
   font-size: 30px;
 }
 
@@ -88,6 +92,39 @@
 
 .menuBlock .menu::after {
   transform: translateY(8px);
+}
+
+.selectWrapper {
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.languages {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(41,44,51,.2);
+  background-color: #fff;
+}
+
+.language {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.language:hover {
+  color: #cd5757;
+}
+
+.selectWrapper:hover .languages {
+  display: inline-block;
 }
 
 @media screen and (max-width: 960px) {
@@ -143,11 +180,22 @@
     transform: rotate(-45deg);
   }
 
+  .phone {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .logo {
-    font-size: 14px;
+    height: 50px;
   }
 
   .phone {
-    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+
+  .menuBlock {
+    margin-left: 15px;
   }
 }

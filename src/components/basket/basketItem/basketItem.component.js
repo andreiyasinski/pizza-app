@@ -1,9 +1,25 @@
 import React from 'react';
 import styles from './basketItem.module.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { deleteFromBasket, changeAmountInBasket } from '../../../actions';
 
+const text = {
+  ru: {
+    cm: "см",
+    dough: "тесто",
+    added: "Добавлено",
+    removed: "Убрано"
+  },
+  en: {
+    cm: "cm",
+    dough: "dough",
+    added: "Added",
+    removed: "Removed"
+  }
+}
+
 const BasketItem = ({ item }) => {
+  const language = useSelector(state => state.language.value);
   const { name, image, size, dough, removed, extra, price } = item.pizza;
   const dispatch = useDispatch();
 
@@ -30,13 +46,13 @@ const BasketItem = ({ item }) => {
         <div className={styles.description}>
           <h2 className={styles.name}>{name}</h2>
           <p className={styles.details}>
-            {`${size.name} ${size.diameter} см, ${dough.toLowerCase()} тесто`}
+            {`${size.name} ${size.diameter} ${text[language].cm}, ${dough.toLowerCase()} ${text[language].dough}`}
           </p>
           {
-            removed.length !== 0 && <p className={styles.details}>{`Убрано: ${removed.join(', ')}`}</p>
+            removed.length !== 0 && <p className={styles.details}>{`${text[language].removed}: ${removed.join(', ')}`}</p>
           }
           {
-            extra.length !== 0 && <p className={styles.details}>{`Добавлено: ${extra.map(v => v.name).join(', ')}`}</p>
+            extra.length !== 0 && <p className={styles.details}>{`${text[language].added}: ${extra.map(v => v.name).join(', ')}`}</p>
           }
         </div>
       </div>

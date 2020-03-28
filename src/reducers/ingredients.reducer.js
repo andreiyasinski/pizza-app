@@ -5,7 +5,10 @@ import {
 } from '../actions';
 
 const initialState  = {
-  items: [],
+  items: {
+    ru: [],
+    en: []
+  },
   isFetching: false,
   error: null,
 };

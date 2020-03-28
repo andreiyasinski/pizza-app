@@ -9,12 +9,32 @@ import SizeSelector from './sizeSelector/sizeSelector.component';
 import DoughSelector from './doughSelector/doughSelector.component';
 import Extra from './extra/extra.component';
 
+const text = {
+  ru: {
+    cm: "см",
+    g: "г",
+    dough: "тесто",
+    add: "Добавить в пиццу",
+    addToBasket: "Добавить в корзину за",
+    byn: "руб."
+  },
+  en: {
+    cm: "cm",
+    g: "g",
+    dough: "dough",
+    add: "Add to pizza",
+    addToBasket: "Add to basket for",
+    byn: "BYN"
+  }
+}
+
 const SelectedPizza = () => {
   const [removedIngredients, setRemovedIngredients] = useState([]);
   const [size, setSize] = useState(PIZZA_SIZE.SMALL);
   const [duoghType, setDuoghType] = useState(PIZZA_DOUGH.TYPE1);
   const [extra, setExtra] = useState([]);
   const pizza = useSelector(state => state.selectedPizza.data);
+  const language = useSelector(state => state.language.value);
   
   const dispatch = useDispatch();
   
@@ -79,7 +99,7 @@ const SelectedPizza = () => {
           <div className={styles.description}>
             <h2 className={styles.title}>{name}</h2>
             <p className={styles.subtitle}>
-              {`${diameter} см, ${selectedDoughType.toLowerCase()} тесто, ${weight} г`}
+              {`${diameter} ${text[language].cm}, ${selectedDoughType.toLowerCase()} ${text[language].dough}, ${weight} ${text[language].g}`}
             </p>
             <ul className={styles.list}>
               {
@@ -101,12 +121,12 @@ const SelectedPizza = () => {
               duoghType={duoghType}
               size={size}
             />
-            <h3 className={styles.addExtraText}>Добавить в пиццу</h3>
+            <h3 className={styles.addExtraText}>{text[language].add}</h3>
             <ul className={styles.extraList}>
               { extraData.map( item => <Extra item={item} key={item.id} onChange={changeExtra} /> ) }
             </ul>
             <Button onClick={addPizzaToBasket} theme="secondary" className={styles.button}>
-              {`Добавить в корзину за ${totalPrice} руб.`}
+              {`${text[language].addToBasket} ${totalPrice} ${text[language].byn}`}
             </Button>
           </div>
         </div>

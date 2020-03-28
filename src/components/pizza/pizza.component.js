@@ -1,12 +1,24 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import styles from './pizza.module.css';
 import Button from '../../ui-kit/button/button.component';
 import { changeSelectedPizzaState } from '../../actions';
 
+const text = {
+  ru: {
+    button: "Купить",
+    byn: "руб."
+  },
+  en: {
+    button: "Buy",
+    byn: "BYN"
+  }
+}
+
 const Pizza = ({ pizza, ingredients }) => {
   const [pizzaIngredientsData, setPizzaIngredientsData] = useState([]);
   const [pizzaExtraData, setPizzaExtraData] = useState([]);
+  const language = useSelector(state => state.language.value);
   const dispatch = useDispatch();
 
   const getIngredientsData = useCallback((pizzaIngredients) => {
@@ -64,9 +76,9 @@ const Pizza = ({ pizza, ingredients }) => {
                 theme="primary"
                 onClick={openPopUp}
               >
-                Купить
+                {text[language].button}
               </Button>
-              <p className={styles.price}>{`${pizza.size.small.price} руб.`}</p>
+              <p className={styles.price}>{`${pizza.size.small.price} ${text[language].byn}`}</p>
             </div>
           </div>
         </div>
