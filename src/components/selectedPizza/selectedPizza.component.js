@@ -8,25 +8,7 @@ import Button from '../../ui-kit/button/button.component';
 import SizeSelector from './sizeSelector/sizeSelector.component';
 import DoughSelector from './doughSelector/doughSelector.component';
 import Extra from './extra/extra.component';
-
-const text = {
-  ru: {
-    cm: "см",
-    g: "г",
-    dough: "тесто",
-    add: "Добавить в пиццу",
-    addToBasket: "Добавить в корзину за",
-    byn: "руб."
-  },
-  en: {
-    cm: "cm",
-    g: "g",
-    dough: "dough",
-    add: "Add to pizza",
-    addToBasket: "Add to basket for",
-    byn: "BYN"
-  }
-}
+import { selectedPizzaText as text } from '../../text/text';
 
 const SelectedPizza = () => {
   const [removedIngredients, setRemovedIngredients] = useState([]);

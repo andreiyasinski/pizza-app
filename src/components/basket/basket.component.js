@@ -4,25 +4,7 @@ import { useSelector } from 'react-redux';
 import BasketItem from './basketItem/basketItem.component';
 import Button from '../../ui-kit/button/button.component';
 import { Link } from 'react-router-dom';
-
-const text = {
-  ru: {
-    basket: "Корзина",
-    add: "Добавьте что-нибудь в корзину",
-    back: "Вернуться в меню",
-    order: "Заказать",
-    total: "Сумма заказа",
-    byn: "руб"
-  },
-  en: {
-    basket: "Basket",
-    add: "Add something to the basket",
-    back: "Back to menu",
-    order: "Order now",
-    total: "Order price",
-    byn: "BYN"
-  }
-}
+import { basketText as text } from '../../text/text';
 
 const Basket = () => {
   const basket = useSelector(state => state.basket);

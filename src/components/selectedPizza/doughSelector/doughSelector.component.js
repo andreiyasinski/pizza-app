@@ -2,17 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import styles from './doughSelector.module.css';
 import { useSelector } from 'react-redux';
-
-const text = {
-  ru: {
-    traditional: "Традиционное",
-    thin: "Тонкое"
-  },
-  en: {
-    traditional: "Traditional",
-    thin: "Thin"
-  }
-}
+import { doughSelectorText as text } from '../../../text/text';
 
 const DoughSelector = ({ changeDoughType, duoghType, size }) => {
   const language = useSelector(state => state.language.value);

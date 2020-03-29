@@ -7,23 +7,7 @@ import BasketButton from '../../ui-kit/basketButton/basketButton.component';
 import Phone from '../../ui-kit/phone/phone.component';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu, changeLanguage } from '../../actions';
-
-const text = {
-  ru: {
-    menu: "Меню",
-    promotions: "Акции",
-    cashback: "Кэшбэк",
-    about: "О нас",
-    delivery: "Доставка"
-  },
-  en: {
-    menu: "Menu",
-    promotions: "Promotions",
-    cashback: "Cashback",
-    about: "About",
-    delivery: "Delivery"
-  }
-}
+import { headerText as text } from '../../text/text';
 
 const Header = () => {
   const dispatch = useDispatch();

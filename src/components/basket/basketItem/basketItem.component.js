@@ -2,21 +2,7 @@ import React from 'react';
 import styles from './basketItem.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteFromBasket, changeAmountInBasket } from '../../../actions';
-
-const text = {
-  ru: {
-    cm: "см",
-    dough: "тесто",
-    added: "Добавлено",
-    removed: "Убрано"
-  },
-  en: {
-    cm: "cm",
-    dough: "dough",
-    added: "Added",
-    removed: "Removed"
-  }
-}
+import { basketItemText as text } from '../../../text/text';
 
 const BasketItem = ({ item }) => {
   const language = useSelector(state => state.language.value);

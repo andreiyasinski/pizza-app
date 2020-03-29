@@ -3,17 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from './pizza.module.css';
 import Button from '../../ui-kit/button/button.component';
 import { changeSelectedPizzaState } from '../../actions';
-
-const text = {
-  ru: {
-    button: "Купить",
-    byn: "руб."
-  },
-  en: {
-    button: "Buy",
-    byn: "BYN"
-  }
-}
+import { pizzaText as text } from '../../text/text';
 
 const Pizza = ({ pizza, ingredients }) => {
   const [pizzaIngredientsData, setPizzaIngredientsData] = useState([]);

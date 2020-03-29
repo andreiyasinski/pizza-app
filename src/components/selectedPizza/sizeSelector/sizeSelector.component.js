@@ -2,19 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import styles from './sizeSelector.module.css';
 import { useSelector } from 'react-redux';
-
-const text = {
-  en: {
-    small: "Small",
-    medium: "Medium",
-    big: "Big"
-  },
-  ru: {
-    small: "Маленькая",
-    medium: "Средняя",
-    big: "Большая"
-  }
-}
+import { sizeSelectorText as text } from '../../../text/text';
 
 const SizeSelector = ({ changeSize, size }) => {
   const language = useSelector(state => state.language.value);
