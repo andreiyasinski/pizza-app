@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { v4 as id } from 'uuid';
+import { format } from 'date-fns';
 
 export const GET_PIZZAS_REQUEST = 'GET_PIZZAS_REQUEST';
 export const GET_PIZZAS_SUCCESS = 'GET_PIZZAS_SUCCESS';
@@ -132,6 +133,7 @@ export const getTypes = () => (dispatch) => {
 export const BASKET_ADD = 'BASKET_ADD';
 export const BASKET_DELETE = 'BASKET_DELETE';
 export const BASKET_CHANGE_AMOUNT = 'BASKET_CHANGE_AMOUNT';
+export const BASKET_CLEAR = 'BASKET_CLEAR';
 
 export const addToBasket = (item) => ({
   type: BASKET_ADD,
@@ -157,6 +159,10 @@ export const changeAmountInBasket = (id, value) => ({
   }
 });
 
+export const clearBasket = () => ({
+  type: BASKET_CLEAR
+});
+
 export const LANGUAGE_CHANGE = 'LANGUAGE_CHANGE';
 
 export const changeLanguage = (value) => ({
@@ -164,4 +170,15 @@ export const changeLanguage = (value) => ({
   payload: {
     value
   }
+});
+
+export const ORDERS_ADD = 'ORDERS_ADD';
+
+export const makeOrder = (item) => ({
+  type: ORDERS_ADD,
+  payload: {
+    id: id(),
+    date: format(new Date(), 'yyyy-MM-dd, HH:mm'),
+    item
+  },
 });

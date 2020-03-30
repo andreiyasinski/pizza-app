@@ -76,7 +76,10 @@ export const basketText = {
     back: "Вернуться в меню",
     order: "Заказать",
     total: "Сумма заказа",
-    byn: "руб."
+    byn: "руб.",
+    compliteTitle: "Пицца уже идет к вам!",
+    compliteSubtitle: "Ожидайте курьера в течение часа",
+    orders: "Заказы"
   },
   en: {
     basket: "Basket",
@@ -84,7 +87,10 @@ export const basketText = {
     back: "Back to menu",
     order: "Order now",
     total: "Order price",
-    byn: "BYN"
+    byn: "BYN",
+    compliteTitle: "Pizza is already coming to you!",
+    compliteSubtitle: "Expect a courier within an hour",
+    orders: "Orders"
   }
 };
 
@@ -93,13 +99,15 @@ export const basketItemText = {
     cm: "см",
     dough: "тесто",
     added: "Добавлено",
-    removed: "Убрано"
+    removed: "Убрано",
+    amount: "Количество"
   },
   en: {
     cm: "cm",
     dough: "dough",
     added: "Added",
-    removed: "Removed"
+    removed: "Removed",
+    amount: "Amount"
   }
 };
 

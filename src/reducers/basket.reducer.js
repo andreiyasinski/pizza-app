@@ -1,7 +1,8 @@
 import {
   BASKET_ADD,
   BASKET_DELETE,
-  BASKET_CHANGE_AMOUNT
+  BASKET_CHANGE_AMOUNT,
+  BASKET_CLEAR
 } from '../actions';
 
 const initialState  = [];
@@ -23,6 +24,8 @@ const basket = (state = initialState, action) => {
         :
         record
       ))
+    case BASKET_CLEAR:
+    return [];
     default:
       return state
   }
