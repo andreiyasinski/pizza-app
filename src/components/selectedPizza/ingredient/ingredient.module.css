@@ -14,11 +14,11 @@
   text-decoration: line-through;
 }
 
-.text {
+.removable {
   cursor: pointer;
 }
 
-.removable {
+.notSelected {
   border-bottom: 1px dotted #878686;
 }
 

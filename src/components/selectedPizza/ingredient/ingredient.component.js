@@ -14,9 +14,10 @@ const Ingredient = ({ onChange, item}) => {
     <li className={styles.listItem}>
       <label className={styles.label}>
         <span
-          className={cn(styles.text, {
-            [styles.selected]: isChecked,
-            [styles.removable]: item.removable && !isChecked,
+          className={cn({
+            [styles.removable]: item.removable,
+            [styles.selected]: item.removable && isChecked,
+            [styles.notSelected]: item.removable && !isChecked,
           })}
         >
           {item.name}
