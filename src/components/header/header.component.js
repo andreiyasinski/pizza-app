@@ -71,16 +71,20 @@ const Header = () => {
           <div className={styles.selectWrapper}>
             <span
               onClick={() => dispatch(changeLanguage("en"))}
-              className={styles.language}
+              className={cn(styles.language, {
+                [styles.activeLanguage]: language === "en"
+              })}
             >EN</span>
             <span className={styles.delimiter}>|</span>
             <span
               onClick={() => dispatch(changeLanguage("ru"))}
-              className={styles.language}
+              className={cn(styles.language, {
+                [styles.activeLanguage]: language === "ru"
+              })}
             >RU</span>
           </div>
           <Phone className={styles.phone} />
-          <Link to="/basket" className={styles.basket}>
+          <Link to="/basket" className={styles.basket} tabIndex="-1">
             <BasketButton amount={amount} />
           </Link>
         </div>

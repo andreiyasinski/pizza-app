@@ -48,7 +48,10 @@ const Pizza = ({ pizza, ingredients }) => {
           alt={pizza.name}
         />
         <div className={styles.info}>
-          <h2 className={styles.title}>
+          <h2
+            className={styles.title}
+            onClick={openPopUp}
+          >
             {pizza.name}
           </h2>
           <div className={styles.bottom}>

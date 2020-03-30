@@ -17,6 +17,15 @@
   z-index: 1;
 }
 
+.container:disabled {
+  opacity: 0.6;
+}
+
+.container:disabled::before {
+  opacity: 0.6;
+  background: transparent;
+}
+
 .primary {
   color: #fff;
   border-radius: 24px;  

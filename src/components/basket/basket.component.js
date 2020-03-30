@@ -32,10 +32,16 @@ const Basket = () => {
         {`${text[language].total}: ${totalOrderPrice} ${text[language].byn}`}
       </p>
       <div className={styles.bottom}>
-        <Link to="/" className={styles.link}>
+        <Link to="/" className={styles.link} tabIndex="-1">
           <Button theme="secondary" className={styles.back}>{text[language].back}</Button>
         </Link>
-        <Button theme="secondary" className={styles.button}>{text[language].order}</Button>
+        <Button
+          theme="secondary"
+          className={styles.button}
+          isDisabled={!basket.length}
+        >
+          {text[language].order}
+        </Button>
       </div>
     </div>
   );
