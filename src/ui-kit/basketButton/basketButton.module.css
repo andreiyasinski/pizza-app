@@ -5,7 +5,6 @@
   justify-content: center;
   padding: 17px 17px;
   text-decoration: none;
-  /* background: #ff6900; */
   background: linear-gradient(45deg, #ff4756, #fe8b77);
   font-weight: 700;
   line-height: 14px;
@@ -32,10 +31,20 @@
   transition: opacity .3s;
 }
 
+.container:focus {
+  background: linear-gradient(45deg, #ff4756, #fec477);
+}
+
 .container:hover:before {
   opacity: 1;
 }
 
 .amount {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 15px 14px;
+  }
 }

@@ -76,7 +76,7 @@ export const basketText = {
     back: "Вернуться в меню",
     order: "Заказать",
     total: "Сумма заказа",
-    byn: "руб"
+    byn: "руб."
   },
   en: {
     basket: "Basket",

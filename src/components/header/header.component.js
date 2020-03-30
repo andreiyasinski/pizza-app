@@ -50,13 +50,8 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
+                <NavLink onClick={closeMenu} to="/promotions" exact className={styles.link}>
                   {text[language].promotions}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
-                  {text[language].cashback}
                 </NavLink>
               </li>
               <li>
@@ -65,7 +60,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={closeMenu}  to="/" exact className={styles.link}>
+                <NavLink onClick={closeMenu}  to="/delivery" exact className={styles.link}>
                   {text[language].delivery}
                 </NavLink>
               </li>
@@ -74,21 +69,15 @@ const Header = () => {
         </div>
         <div className={styles.headerRight}>
           <div className={styles.selectWrapper}>
-            <span>{language.toUpperCase()}</span>
-            <ul className={styles.languages}>
-              <li
-                onClick={() => dispatch(changeLanguage("en"))}
-                className={styles.language}
-              >
-                EN
-              </li>
-              <li
-                onClick={() => dispatch(changeLanguage("ru"))}
-                className={styles.language}
-              >
-                RU
-              </li>
-            </ul>
+            <span
+              onClick={() => dispatch(changeLanguage("en"))}
+              className={styles.language}
+            >EN</span>
+            <span className={styles.delimiter}>|</span>
+            <span
+              onClick={() => dispatch(changeLanguage("ru"))}
+              className={styles.language}
+            >RU</span>
           </div>
           <Phone className={styles.phone} />
           <Link to="/basket" className={styles.basket}>

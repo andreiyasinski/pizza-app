@@ -29,12 +29,19 @@
   border: 1px solid #ff4756;
 }
 
+.back:focus {
+  background: transparent;
+  color: #ff4756;
+  border: 1px solid #ff4756;
+}
+
 .back::before {
   background: transparent;
 }
 
 .link {
   text-decoration: none;
+  outline: none;
 }
 
 .total {

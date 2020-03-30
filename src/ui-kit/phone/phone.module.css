@@ -5,15 +5,7 @@
   font-weight: 700;
   color: #817E71;
   text-decoration: none;
-}
-
-.container:hover {
-  color: #1E1C22;
-}
-
-.container:hover .phoneIcon {
-  background: #817E71;
-  color: #fff;
+  transition: color .3s;
 }
 
 .phoneIcon {
@@ -25,7 +17,17 @@
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  fill: #817E71
+  fill: #817E71;
+  transition: all 0.3s;
+}
+
+.container:hover {
+  color: #1E1C22;
+}
+
+.container:hover .phoneIcon {
+  background: #817E71;
+  color: #fff;
 }
 
 @media screen and (max-width: 480px) {

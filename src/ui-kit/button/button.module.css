@@ -10,31 +10,21 @@
   color: #fff;
   border: none;
   cursor: pointer;
-  outline: none;
-  transition: all .3s ease, color .3s ease;
+  transition: all .3s ease, color .2s ease;
   box-sizing: border-box;
   background: linear-gradient(45deg, #ff4756, #fe8b77);
+  outline: none;
   z-index: 1;
 }
 
 .primary {
   color: #fff;
-  border-radius: 24px;
-  /* background: #ff6900; */
-  
+  border-radius: 24px;  
 }
 
 .secondary {
-  /* background-color: #ff6900; */
   border-radius: 10px;
 }
-
-/* 
-.primary:hover, .secondary:hover {
-  background-color: #F78500;
-  background: linear-gradient(45deg, #ff4756, #fec477);
-  color: #fff;
-} */
 
 .container::before {
   border-radius: inherit;
@@ -51,6 +41,10 @@
   transition: opacity .3s;
 }
 
-.container:hover:before {
+.container:focus {
+  background: linear-gradient(45deg, #ff4756, #fec477);
+}
+
+.container:hover::before {
   opacity: 1;
 }

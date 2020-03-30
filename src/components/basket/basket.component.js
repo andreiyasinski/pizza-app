@@ -28,7 +28,9 @@ const Basket = () => {
         :
         <p>{text[language].add}</p>
       }
-      <p className={styles.total}>{`${text[language].total}: ${totalOrderPrice} ${text[language].byn}.`}</p>
+      <p className={styles.total}> 
+        {`${text[language].total}: ${totalOrderPrice} ${text[language].byn}`}
+      </p>
       <div className={styles.bottom}>
         <Link to="/" className={styles.link}>
           <Button theme="secondary" className={styles.back}>{text[language].back}</Button>

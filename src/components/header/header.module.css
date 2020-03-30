@@ -24,6 +24,7 @@
 
 .basket {
   text-decoration: none;
+  outline: none;
 }
 
 .list {
@@ -42,6 +43,7 @@
 
 .headerRight {
   display: flex;
+  align-items: center;
 }
 
 .phone {
@@ -95,36 +97,24 @@
 }
 
 .selectWrapper {
-  position: relative;
   padding: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.languages {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  list-style: none;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 12px 0 rgba(41,44,51,.2);
-  background-color: #fff;
-}
-
 .language {
   padding: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .language:hover {
   color: #cd5757;
 }
 
-.selectWrapper:hover .languages {
-  display: inline-block;
+.delimiter {
+  padding-bottom: 2px;
 }
 
 @media screen and (max-width: 960px) {
@@ -193,9 +183,18 @@
   .phone {
     margin-right: 10px;
     margin-left: 5px;
+    font-size: 16px;
   }
 
   .menuBlock {
-    margin-left: 15px;
+    margin-left: 10px;
+  }
+
+  .selectWrapper {
+    padding: 5px;
+  }
+
+  .language {
+    font-size: 12px;
   }
 }
