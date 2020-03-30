@@ -20,13 +20,15 @@
   transition: all 0.3s;
 }
 
-.container:hover {
-  color: #1E1C22;
-}
-
-.container:hover .phoneIcon {
-  background: #817E71;
-  color: #fff;
+@media (min-width: 1024px) {
+  .container:hover {
+    color: #1E1C22;
+  }
+  
+  .container:hover .phoneIcon {
+    background: #817E71;
+    color: #fff;
+  }
 }
 
 @media screen and (max-width: 480px) {

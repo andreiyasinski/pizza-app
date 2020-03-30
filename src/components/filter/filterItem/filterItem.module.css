@@ -19,18 +19,7 @@
   transition: all .3s ease
 }
 
-.label:hover {
-  background-color: #817E71;
-  color: #fff;
-}
-
 .checked {
-  background-color: #f90;
-  color: #fff;
-  border-color: #f90;
-}
-
-.checked:hover {
   background-color: #f90;
   color: #fff;
   border-color: #f90;
@@ -43,4 +32,17 @@
 
 .input {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .label:hover {
+    background-color: #817E71;
+    color: #fff;
+  }
+
+  .checked:hover {
+    background-color: #f90;
+    color: #fff;
+    border-color: #f90;
+  }
 }

@@ -64,11 +64,6 @@
   transition: all .3s;
 }
 
-.count:hover, .count:focus {
-  background-color: #ff4756;
-  color: #fff;
-}
-
 .price {
   width: 120px;
   text-align: center;
@@ -88,9 +83,18 @@
   transition: all .3s;
 }
 
-.delete:hover .deleteIcon, .delete:focus .deleteIcon {
-  fill: #c00010;
-} 
+
+
+@media (min-width: 1024px) {
+  .count:hover, .count:focus {
+    background-color: #ff4756;
+    color: #fff;
+  }
+
+  .delete:hover .deleteIcon, .delete:focus .deleteIcon {
+    fill: #c00010;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .amount {

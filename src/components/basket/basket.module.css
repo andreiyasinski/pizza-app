@@ -23,12 +23,6 @@
   border: 1px solid #babfd0;
 }
 
-.back:hover {
-  background: transparent;
-  color: #ff4756;
-  border: 1px solid #ff4756;
-}
-
 .back:focus {
   background: transparent;
   color: #ff4756;
@@ -48,6 +42,14 @@
   margin-top: 50px;
   font-size: 21px;
   text-align: end;
+}
+
+@media (min-width: 1024px) {
+  .back:hover {
+    background: transparent;
+    color: #ff4756;
+    border: 1px solid #ff4756;
+  }
 }
 
 @media screen and (max-width: 480px) {

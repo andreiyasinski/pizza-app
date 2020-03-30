@@ -54,6 +54,8 @@
   background: linear-gradient(45deg, #ff4756, #fec477);
 }
 
-.container:hover::before {
-  opacity: 1;
+@media (min-width: 1024px) {
+  .container:hover::before {
+    opacity: 1;
+  }
 }

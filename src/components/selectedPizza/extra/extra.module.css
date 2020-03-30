@@ -14,10 +14,6 @@
   margin-top: 60px;
 }
 
-.container:hover {
-  box-shadow: rgba(6, 5, 50, 0.1) 0px 4px 10px;
-}
-
 .image {
   width: 100px;
   height: 100px;
@@ -37,6 +33,12 @@
 
 .text::first-letter {
   text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .container:hover {
+    box-shadow: rgba(6, 5, 50, 0.1) 0px 4px 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {

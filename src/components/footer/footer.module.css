@@ -26,14 +26,11 @@
   color: #817E71;
 }
 
-.link:hover {
-  text-decoration: none;
+@media (min-width: 1024px) {
+  .link:hover {
+    text-decoration: none;
+  } 
 }
-
-@media screen and (max-width: 1200px) {
-  
-}
-
 /* 769 - 960 px */
 @media screen and (max-width: 850px) {
 	.footerLeft {
