@@ -77,7 +77,7 @@ export const basketText = {
     order: "Заказать",
     total: "Сумма заказа",
     byn: "руб.",
-    compliteTitle: "Пицца уже идет к вам!",
+    compliteTitle: "Пицца уже eдет к вам!",
     compliteSubtitle: "Ожидайте курьера в течение часа",
     orders: "Заказы"
   },
