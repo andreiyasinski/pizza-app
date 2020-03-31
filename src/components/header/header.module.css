@@ -12,8 +12,16 @@
   width: 100%;
 }
 
+.navWrapper {
+  width: 100%;
+}
+
 .logo {
   height: 50px;
+}
+
+.navigation {
+  margin: 0 auto;
 }
 
 .link {
@@ -25,6 +33,8 @@
 .menu {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .basket {
@@ -153,6 +163,7 @@
   .menu {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     background-color: #fff;
     width: 300px;
     transform: translateX(100%);
