@@ -12,6 +12,7 @@ const Logo = ({ className }) => {
       className={styles.container}
     >
       <img className={cn(styles.image, className)} src={logo} alt="logo" />
+      <p className={styles.text}>PIZZA</p>
     </Link>
   );
 };

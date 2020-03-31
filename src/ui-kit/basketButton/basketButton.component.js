@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './basketButton.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import cn from 'classnames';
+import { changeNewPizzaMessageState } from '../../actions';
 
 const BasketButton = ({ amount }) => {
+  const isNewAdded = useSelector(state => state.newPizzaMessage.isNewAdded);
+  const dispatch = useDispatch();
+  useEffect(()=> {
+    const timer = setTimeout(() => {
+      dispatch(changeNewPizzaMessageState(false));
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [dispatch, amount])
+
   return (
     <button className={styles.container}>
       <svg width="20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-basket" className="svg-inline--fa fa-shopping-basket fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -9,6 +21,11 @@ const BasketButton = ({ amount }) => {
         </path>
       </svg>
       <p className={styles.amount}>{amount}</p>
+      <div className={cn(styles.message, {
+        [styles.messageActive]: isNewAdded
+      })}>
+        Пицца добавлена в корзину!
+      </div>
     </button>
   );
 };

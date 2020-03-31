@@ -182,3 +182,12 @@ export const makeOrder = (item) => ({
     item
   },
 });
+
+export const CHANGE_NEW_PIZZA_MESSAGE_STATE = 'CHANGE_NEW_PIZZA_MESSAGE_STATE';
+
+export const changeNewPizzaMessageState = (isNewAdded) => ({
+  type: CHANGE_NEW_PIZZA_MESSAGE_STATE,
+  payload: {
+    isNewAdded 
+  }
+});

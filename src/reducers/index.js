@@ -7,6 +7,7 @@ import types from './types.reducer';
 import basket from './basket.reducer';
 import language from './language.reducer';
 import orders from './orders.reducer';
+import newPizzaMessage from './newPizzaMessage.reducer';
 
 const mainReducer = combineReducers({
   pizzas,
@@ -16,7 +17,8 @@ const mainReducer = combineReducers({
   types,
   basket,
   language,
-  orders
+  orders,
+  newPizzaMessage
 })
 
 export default mainReducer;
