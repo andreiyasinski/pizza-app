@@ -3,10 +3,14 @@ import styles from './basketButton.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import cn from 'classnames';
 import { changeNewPizzaMessageState } from '../../actions';
+import { basketButtonText as text } from '../../text/text';
 
 const BasketButton = ({ amount }) => {
   const isNewAdded = useSelector(state => state.newPizzaMessage.isNewAdded);
+  const language = useSelector(state => state.language.value);
+
   const dispatch = useDispatch();
+
   useEffect(()=> {
     const timer = setTimeout(() => {
       dispatch(changeNewPizzaMessageState(false));
@@ -24,7 +28,7 @@ const BasketButton = ({ amount }) => {
       <div className={cn(styles.message, {
         [styles.messageActive]: isNewAdded
       })}>
-        Пицца добавлена в корзину!
+        {text[language].added}
       </div>
     </button>
   );

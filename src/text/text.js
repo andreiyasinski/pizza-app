@@ -121,3 +121,12 @@ export const footerText = {
     link: "Personal Data Processing Policy"
   }
 };
+
+export const basketButtonText = {
+  ru: {
+    added: "Пицца добавлена в корзину!"
+  },
+  en: {
+    added: "Pizza added to the basket!"
+  }
+};
