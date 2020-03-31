@@ -1,11 +1,8 @@
 .container {
   min-height: 220px;
-  /* background: 
-    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-    url(../../assets/banner.jpg) center no-repeat; */
-    background: 
-      linear-gradient(rgba(255, 204, 141, 0.2), rgba(113, 52, 0, 0.2)),
-      url(../../assets/banner.jpg) center no-repeat;
+  background: 
+    linear-gradient(rgba(255, 204, 141, 0.2), rgba(113, 52, 0, 0.2)),
+    url(../../assets/banner.jpg) center no-repeat;
   background-size: cover;
   margin-bottom: 50px;
   display: flex;
@@ -22,8 +19,10 @@
 }
 
 /* 769 - 960 px */
-@media screen and (max-width: 850px) {
-	
+@media screen and (max-width: 1024px) {
+	.container {
+    margin-bottom: 30px;
+  }
 }
 
 /* 481 - 768 px */

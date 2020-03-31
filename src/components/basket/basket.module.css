@@ -132,6 +132,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
 @media screen and (max-width: 480px) {
   .back, .button {
     padding: 17px 17px;

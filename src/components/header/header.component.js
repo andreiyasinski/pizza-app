@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import cn from 'classnames';
 import styles from './header.module.css';
@@ -14,8 +14,6 @@ const Header = () => {
   const isMenuOpen = useSelector(state => state.menu.isMenuOpen);
   const amount = useSelector(state => state.basket.length);
   const language = useSelector(state => state.language.value);
-
-  const nav = useRef(null);
 
   const handleMenu = (e) => {
     if (e.target === e.currentTarget) {
@@ -37,52 +35,52 @@ const Header = () => {
           })}
           onClick={handleMenu}
         >
-          <nav
-            className={cn(styles.navigation, {
-            [styles.navigationActive] : isMenuOpen
-          })}
-          ref={nav}
-          >
-            <ul className={styles.list}>
-              <li>
-                <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
-                  {text[language].menu}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink onClick={closeMenu} to="/promotions" exact className={styles.link}>
-                  {text[language].promotions}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink onClick={closeMenu} to="/about" className={styles.link}>
-                  {text[language].about}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink onClick={closeMenu}  to="/delivery" exact className={styles.link}>
-                  {text[language].delivery}
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          <div className={cn(styles.menu, {
+            [styles.menuActive] : isMenuOpen
+          })}>
+            <nav className={styles.navigation}>
+              <ul className={styles.list}>
+                <li>
+                  <NavLink onClick={closeMenu} to="/" exact className={styles.link}>
+                    {text[language].menu}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink onClick={closeMenu} to="/promotions" exact className={styles.link}>
+                    {text[language].promotions}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink onClick={closeMenu} to="/about" className={styles.link}>
+                    {text[language].about}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink onClick={closeMenu}  to="/delivery" exact className={styles.link}>
+                    {text[language].delivery}
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
+            <div className={styles.selectWrapper}>
+              <span
+                onClick={() => dispatch(changeLanguage("en"))}
+                className={cn(styles.language, {
+                  [styles.activeLanguage]: language === "en"
+                })}
+              >EN</span>
+              <span className={styles.delimiter}>|</span>
+              <span
+                onClick={() => dispatch(changeLanguage("ru"))}
+                className={cn(styles.language, {
+                  [styles.activeLanguage]: language === "ru"
+                })}
+              >RU</span>
+            </div>
+          </div>
+          
         </div>
         <div className={styles.headerRight}>
-          <div className={styles.selectWrapper}>
-            <span
-              onClick={() => dispatch(changeLanguage("en"))}
-              className={cn(styles.language, {
-                [styles.activeLanguage]: language === "en"
-              })}
-            >EN</span>
-            <span className={styles.delimiter}>|</span>
-            <span
-              onClick={() => dispatch(changeLanguage("ru"))}
-              className={cn(styles.language, {
-                [styles.activeLanguage]: language === "ru"
-              })}
-            >RU</span>
-          </div>
           <Phone className={styles.phone} />
           <Link to="/basket" className={styles.basket} tabIndex="-1">
             <BasketButton amount={amount} />
@@ -95,7 +93,7 @@ const Header = () => {
         })}
         onClick={() => dispatch(toggleMenu(!isMenuOpen))}
       >
-        <span className={styles.menu}>
+        <span className={styles.menuIcon}>
           <span className={styles.menuLine}></span>
         </span>
       </div>

@@ -35,7 +35,6 @@
 
 .image {
   width: 67px;
-  height: 67px;
   margin-right: 12px;
 }
 
@@ -83,8 +82,6 @@
   transition: all .3s;
 }
 
-
-
 @media (min-width: 1024px) {
   .count:hover, .count:focus {
     background-color: #ff4756;
@@ -99,6 +96,18 @@
 @media screen and (max-width: 768px) {
   .amount {
     width: 90px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .count {
+    height: 35px;
   }
 }
 
@@ -115,5 +124,10 @@
   .actions {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .amount {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

@@ -115,9 +115,22 @@
   .description {
     width: 50%;
   }
+
+  .closeIcon {  
+    right: 12px;
+    top: 12px;
+  }
+
+  .svgPath {
+    fill: rgba(0, 0, 0, 0.7);
+  }
+
+  .description {
+    padding: 40px 20px;
+  }
 } 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .imageBlock {
     width: 45%;
   }
@@ -128,12 +141,9 @@
 }
 
 @media screen and (max-width: 710px) {
-  .container {
-    /* margin-top: 20px; */
-  }
-
   .wrapper {
     align-items: flex-start;
+    padding: 10px;
   }
 
   .card {
@@ -141,27 +151,19 @@
     align-items: center;
   }
 
-  .svgPath {
-    fill: #a2a2a2;
-  }
-
   .imageBlock {
     width: 100%;
   }
 
-  .closeIcon {  
-    right: 8px;
-    top: 8px;
-  }
-
   .image {
     width: 50%;
-    padding: 20px 0 0 10px;
+    padding: 50px 0 0 10px;
   }
 
   .description {
     width: 100%;
     background:#fcfcfc;
+    padding: 20px 20px;
   }
 
   .extraList {

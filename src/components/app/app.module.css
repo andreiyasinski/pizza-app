@@ -25,6 +25,12 @@
 }
 
 .footerBlock {
-  /* background-color: #e2e0d8; */
   background-color: #ffe7c6;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+  }
 }

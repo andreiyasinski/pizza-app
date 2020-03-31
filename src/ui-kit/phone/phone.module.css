@@ -8,7 +8,7 @@
   transition: color .3s;
 }
 
-.phoneIcon {
+.phoneIconWrapper {
   width: 46px;
   height: 46px;
   background: #f6f5f0;
@@ -25,14 +25,14 @@
     color: #1E1C22;
   }
   
-  .container:hover .phoneIcon {
+  .container:hover .phoneIconWrapper {
     background: #817E71;
     color: #fff;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .phoneIcon {
+@media (max-width: 480px) {
+  .phoneIconWrapper {
     display: none;
   }
 }
