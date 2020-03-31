@@ -106,7 +106,8 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+
+@media screen and (max-width: 1024px) {
   .imageBlock {
     width: 50%;
   }
@@ -128,7 +129,7 @@
 
 @media screen and (max-width: 710px) {
   .container {
-    margin-top: 50px;
+    /* margin-top: 20px; */
   }
 
   .wrapper {
