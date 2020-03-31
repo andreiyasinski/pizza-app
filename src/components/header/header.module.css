@@ -55,7 +55,7 @@
 
 .menuBlock {
   display: none;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: sans-serif;
   position: relative;
   cursor: pointer;
   width: 30px;

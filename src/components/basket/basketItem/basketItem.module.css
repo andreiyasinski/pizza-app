@@ -64,7 +64,7 @@
 }
 
 .price {
-  width: 120px;
+  min-width: 120px;
   text-align: center;
   font-size: 21px;
   color: #373535;
@@ -104,6 +104,7 @@
 
   .price {
     font-size: 18px;
+    min-width: 100px;
   }
 
   .count {

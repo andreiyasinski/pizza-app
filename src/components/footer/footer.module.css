@@ -32,14 +32,14 @@
   } 
 }
 /* 769 - 960 px */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 960px) {
 	.footerLeft {
     width: 50%;
   }
 }
 
 /* 481 - 768 px */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
     justify-content: center;

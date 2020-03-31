@@ -6,8 +6,19 @@
   background-size: cover;
   margin-bottom: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 32px;
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
@@ -18,15 +29,13 @@
   }
 }
 
-/* 769 - 960 px */
 @media screen and (max-width: 1024px) {
 	.container {
     margin-bottom: 30px;
   }
 }
 
-/* 481 - 768 px */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
   .container {
     padding-top: 30px;
     padding-bottom: 30px;
