@@ -131,16 +131,6 @@
 } 
 
 @media screen and (max-width: 768px) {
-  .imageBlock {
-    width: 45%;
-  }
-
-  .description {
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 710px) {
   .wrapper {
     align-items: flex-start;
     padding: 10px;
@@ -149,6 +139,7 @@
   .card {
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
   }
 
   .imageBlock {
@@ -168,10 +159,6 @@
 
   .extraList {
     justify-content: space-around;
-  }
-
-  .description {
-    height: auto;
   }
 }
 
