@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './selectedPizza.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { PIZZA_SIZE, PIZZA_DOUGH } from '../../models/models';
@@ -17,6 +17,13 @@ const SelectedPizza = () => {
   const [extra, setExtra] = useState([]);
   const pizza = useSelector(state => state.selectedPizza.data);
   const language = useSelector(state => state.language.value);
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = '';
+    }
+  }, [])
   
   const dispatch = useDispatch();
   
