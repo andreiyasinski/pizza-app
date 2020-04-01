@@ -41,3 +41,13 @@
     padding-bottom: 30px;
   }
 }
+
+@media screen and (max-width: 468px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+}
