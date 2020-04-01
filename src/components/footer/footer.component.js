@@ -11,9 +11,9 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.footerLeft}>
         <p className={styles.copyright}>
-          © Copyright 2019 «Pizza Delivery»<br />{text[language].copyright}
+          © Copyright 2020 «Pizza Delivery»<br />{text[language].copyright}
         </p>
-        <a className={styles.link} href="/">{text[language].link}</a>
+        <a className={styles.link} href="https://github.com/andreiyasinski" target="blank">Developed by Andrei Yasinski</a>
       </div>
       <Logo className={styles.logo} />
     </div>

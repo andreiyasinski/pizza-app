@@ -130,3 +130,14 @@ export const basketButtonText = {
     added: "Pizza added to the basket!"
   }
 };
+
+export const bunnerText = {
+  ru: {
+    title: "#ОставайтесьДома",
+    subtitle: "Мы доставим!"
+  },
+  en: {
+    title: "#StayAtHome",
+    subtitle: "We will deliver!"
+  }
+};
