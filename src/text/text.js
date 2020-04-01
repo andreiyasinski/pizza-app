@@ -113,12 +113,10 @@ export const basketItemText = {
 
 export const footerText = {
   ru: {
-    copyright: "Все права защищены.",
-    link: "Политика обработки персональных данных"
+    copyright: "Все права защищены."
   },
   en: {
-    copyright: "All Rights Reserved.",
-    link: "Personal Data Processing Policy"
+    copyright: "All Rights Reserved."
   }
 };
 
