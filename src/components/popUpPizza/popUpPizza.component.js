@@ -73,45 +73,47 @@ const PopUpPizza = () => {
 
   return (
     <PopUp>
-      <div className={styles.imageBlock}>
-        <img
-          src={image}
-          className={styles.image}
-          alt={name}
-        />
-      </div>
-      <div className={styles.description}>
-        <h2 className={styles.title}>{name}</h2>
-        <p className={styles.subtitle}>
-          {`${diameter} ${text[language].cm}, ${selectedDoughType.toLowerCase()} ${text[language].dough}, ${weight} ${text[language].g}`}
-        </p>
-        <ul className={styles.list}>
-          {
-            pizza.ingredients.map( (item, i) => (
-              <Ingredient
-                onChange={changeRemovedIngredients}
-                key={item.id}
-                item={item}
-              />
-            ))
-          }
-        </ul>
-        <SizeSelector
-          changeSize={changeSize}
-          size={size}
-        />
-        <DoughSelector
-          changeDoughType={changeDoughType}
-          duoghType={duoghType}
-          size={size}
-        />
-        <h3 className={styles.addExtraText}>{text[language].add}</h3>
-        <ul className={styles.extraList}>
-          { extraData.map( item => <Extra item={item} key={item.id} onChange={changeExtra} /> ) }
-        </ul>
-        <Button onClick={addPizzaToBasket} theme="secondary" className={styles.button}>
-          {`${text[language].addToBasket} ${totalPrice} ${text[language].byn}`}
-        </Button>
+      <div className={styles.card}>
+        <div className={styles.imageBlock}>
+          <img
+            src={image}
+            className={styles.image}
+            alt={name}
+          />
+        </div>
+        <div className={styles.description}>
+          <h2 className={styles.title}>{name}</h2>
+          <p className={styles.subtitle}>
+            {`${diameter} ${text[language].cm}, ${selectedDoughType.toLowerCase()} ${text[language].dough}, ${weight} ${text[language].g}`}
+          </p>
+          <ul className={styles.list}>
+            {
+              pizza.ingredients.map( (item, i) => (
+                <Ingredient
+                  onChange={changeRemovedIngredients}
+                  key={item.id}
+                  item={item}
+                />
+              ))
+            }
+          </ul>
+          <SizeSelector
+            changeSize={changeSize}
+            size={size}
+          />
+          <DoughSelector
+            changeDoughType={changeDoughType}
+            duoghType={duoghType}
+            size={size}
+          />
+          <h3 className={styles.addExtraText}>{text[language].add}</h3>
+          <ul className={styles.extraList}>
+            { extraData.map( item => <Extra item={item} key={item.id} onChange={changeExtra} /> ) }
+          </ul>
+          <Button onClick={addPizzaToBasket} theme="secondary" className={styles.button}>
+            {`${text[language].addToBasket} ${totalPrice} ${text[language].byn}`}
+          </Button>
+        </div>
       </div>
     </PopUp>
   );

@@ -1,3 +1,8 @@
+.card {
+  display: flex;
+  max-width: 880px;
+}
+
 .imageBlock {
   display: flex;
   justify-content: center;
