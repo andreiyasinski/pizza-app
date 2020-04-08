@@ -1,39 +1,3 @@
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 45px;
-  background-color: rgba(0,0,0,0.6);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 100;
-  overflow: auto;
-}
-
-.container {
-  position: relative;
-}
-
-.card {
-  display: flex;
-  max-width: 880px;
-  background: #fff;
-  border-radius: 10px;
-  animation: popupZoomOut .15s ease-in-out;
-  box-shadow: 0 30px 60px rgba(0,0,0,.2);
-  overflow: hidden;
-}
-
-.closeIcon {  
-  position: absolute;
-  top: 0;
-  right: -35px;
-  cursor: pointer;
-}
-
 .imageBlock {
   display: flex;
   justify-content: center;
@@ -116,26 +80,12 @@
     width: 50%;
   }
 
-  .closeIcon {  
-    right: 12px;
-    top: 12px;
-  }
-
-  .svgPath {
-    fill: rgba(0, 0, 0, 0.7);
-  }
-
   .description {
     padding: 40px 20px;
   }
 } 
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    align-items: flex-start;
-    padding: 10px;
-  }
-
   .card {
     flex-direction: column;
     align-items: center;
@@ -165,10 +115,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .wrapper {
-    padding: 10px;
-  }
-  
   .description {
     padding: 20px 10px;
   }

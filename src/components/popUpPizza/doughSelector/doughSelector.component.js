@@ -34,7 +34,6 @@ const DoughSelector = ({ changeDoughType, duoghType, size }) => {
           type="radio"
           name="dough"
           value={PIZZA_DOUGH.TYPE2}
-          checked={ size !== PIZZA_SIZE.SMALL && duoghType === PIZZA_DOUGH.TYPE2 }
           disabled={ size === PIZZA_SIZE.SMALL }
         />
       </label>
