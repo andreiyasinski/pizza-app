@@ -3,6 +3,7 @@ import cn from 'classnames';
 import styles from './doughSelector.module.css';
 import { useSelector } from 'react-redux';
 import { doughSelectorText as text } from '../../../text/text';
+import { PIZZA_DOUGH, PIZZA_SIZE } from '../../../models/models';
 
 const DoughSelector = ({ changeDoughType, duoghType, size }) => {
   const language = useSelector(state => state.language.value);
@@ -18,12 +19,12 @@ const DoughSelector = ({ changeDoughType, duoghType, size }) => {
           className={styles.radio}
           type="radio"
           name="dough"
-          value="type1"
+          value={PIZZA_DOUGH.TYPE1}
         />
       </label>
       <label className={styles.label}>
         <span className={cn(styles.name, {
-          [styles.disabled]:  size === "small"
+          [styles.disabled]:  size === PIZZA_SIZE.SMALL
         })}>
           {text[language].thin}
         </span>
@@ -32,14 +33,14 @@ const DoughSelector = ({ changeDoughType, duoghType, size }) => {
           className={styles.radio}
           type="radio"
           name="dough"
-          value="type2"
-          checked={ size !== "small" && duoghType === "type2" }
-          disabled={ size === "small" }
+          value={PIZZA_DOUGH.TYPE2}
+          checked={ size !== PIZZA_SIZE.SMALL && duoghType === PIZZA_DOUGH.TYPE2 }
+          disabled={ size === PIZZA_SIZE.SMALL }
         />
       </label>
       <div className={cn(styles.wrapper, {
-        [styles.type1]: duoghType === "type1",
-        [styles.type2]: duoghType === "type2" &&  size !== "small",
+        [styles.type1]: duoghType === PIZZA_DOUGH.TYPE1,
+        [styles.type2]: duoghType === PIZZA_DOUGH.TYPE2 &&  size !== PIZZA_SIZE.SMALL,
       })}></div>
     </div>
   );

@@ -17,7 +17,6 @@ const Filter = ({ onClick, pizzaTypes }) => {
             item={item}
             onClick={onClick}
             key={item.id}
-            id={item.id}
           />
         ))
       }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import cn from 'classnames';
 import styles from './ingredient.module.css';
 
-const Ingredient = ({ onChange, item}) => {
+const Ingredient = ({ onChange, item }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleInput = async () => {

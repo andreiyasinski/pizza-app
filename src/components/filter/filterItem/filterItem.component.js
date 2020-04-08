@@ -9,7 +9,7 @@ const FilterItem = ({ item, onClick }) => {
     onClick(!isChecked, item.id);
     setIsChecked(!isChecked)
   }
-
+  
   return (
     <li className={styles.listItem} key={item.id}>
       <label className={cn(styles.label, {
