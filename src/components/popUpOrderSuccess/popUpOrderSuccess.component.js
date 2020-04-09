@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './popUpOrderSuccess.module.css';
-import PopUp from '../../../ui-kit/popUp/popUp.component';
-import complite from '../../../assets/complite.png';
+import PopUp from '../../ui-kit/popUp/popUp.component';
+import complite from '../../assets/complite.png';
 import { useSelector } from 'react-redux';
-import { basketText as text } from '../../../text/text';
+import { basketText as text } from '../../text/text';
 
 const PopUpOrderSuccess = () => {
   const language = useSelector(state => state.language.value);

@@ -1,15 +1,10 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import mainReducer from '../../../reducers';
 import Pizza from '../pizza.component';
-
-const store = createStore(mainReducer);
 
 export default {
   title: 'Pizza',
   component: Pizza,
-  decorators: [storyFn => <Provider store={store}><ul>{storyFn()}</ul></Provider>]
+  decorators: [storyFn => <ul>{storyFn()}</ul>]
 };
 
 export const Original = () => (

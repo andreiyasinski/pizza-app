@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './count.module.css';
+import styles from './counterButton.module.css';
 
-const Count = ({ onClick, symbol }) => {
+const CounterButton = ({ onClick, symbol }) => {
   return (
     <button
       className={styles.count}
@@ -12,4 +12,4 @@ const Count = ({ onClick, symbol }) => {
   );
 };
 
-export default Count;
+export default CounterButton;

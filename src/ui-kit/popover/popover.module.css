@@ -10,6 +10,7 @@
   font-size: 12px;
   transition: opacity 0.5s;
   min-width: 80px;
+  text-align: center;
 }
 
 .message::before {

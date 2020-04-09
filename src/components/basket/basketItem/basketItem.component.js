@@ -3,7 +3,7 @@ import styles from './basketItem.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteFromBasket, changeAmountInBasket } from '../../../actions';
 import { basketItemText as text } from '../../../text/text';
-import Count from '../../../ui-kit/countButton/count.component';
+import CounterButton from '../../../ui-kit/counterButton/counterButton.component';
 
 const BasketItem = ({ item }) => {
   const language = useSelector(state => state.language.value);
@@ -45,9 +45,9 @@ const BasketItem = ({ item }) => {
       </div>
       <div className={styles.actions}>
         <div className={styles.amount}>
-          <Count symbol="-" onClick={() => decreaseAmount(item.id)} />
+          <CounterButton symbol="-" onClick={() => decreaseAmount(item.id)} />
           {item.amount}
-          <Count symbol="+" onClick={() => increaseAmount(item.id)} />
+          <CounterButton symbol="+" onClick={() => increaseAmount(item.id)} />
         </div>
         <p className={styles.price}>
           {`${totalPizzaPrice} руб.`}

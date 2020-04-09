@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { basketText as text } from '../../text/text';
 import { makeOrder, clearBasket, changePopUpState } from '../../actions';
 import OrderItem from './orderItem/orderItem.component';
-import PopUpOrderSuccess from './popUpOrderSuccess/popUpOrderSuccess.component';
+import PopUpOrderSuccess from '../popUpOrderSuccess/popUpOrderSuccess.component';
 
 const Basket = () => {
   const basket = useSelector(state => state.basket);
