@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 45px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   right: 0;
@@ -20,12 +20,12 @@
 .block {
   background: #fff;
   border-radius: 10px;
-  animation: popupZoomOut .15s ease-in-out;
-  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+  animation: popupZoomOut 0.15s ease-in-out;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
-.closeIcon {  
+.closeIcon {
   position: absolute;
   top: 0;
   right: -35px;
@@ -35,8 +35,8 @@
 @keyframes popupZoomOut {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(.98,.98,.98);
-    transform: scale3d(.98,.98,.98);
+    -webkit-transform: scale3d(0.98, 0.98, 0.98);
+    transform: scale3d(0.98, 0.98, 0.98);
   }
 
   100% {
@@ -46,9 +46,8 @@
   }
 }
 
-
 @media screen and (max-width: 1024px) {
-  .closeIcon {  
+  .closeIcon {
     right: 12px;
     top: 12px;
   }
@@ -56,12 +55,16 @@
   .svgPath {
     fill: rgba(0, 0, 0, 0.7);
   }
-} 
+}
 
 @media screen and (max-width: 768px) {
   .wrapper {
     align-items: flex-start;
     padding: 10px;
+  }
+
+  .container {
+    width: 100%;
   }
 }
 
