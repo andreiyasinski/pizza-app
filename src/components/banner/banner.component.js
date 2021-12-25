@@ -8,8 +8,12 @@ const Bunner = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>{text[language].title}</h2>
-      <h3 className={styles.subtitle}>{text[language].subtitle}</h3>
+      <h2 className={styles.title}>
+        {text[language].title}
+      </h2>
+      <h3 className={styles.subtitle}>
+        {text[language].subtitle}
+      </h3>
     </div>
   );
 };
